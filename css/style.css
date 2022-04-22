@@ -1,0 +1,46 @@
+body {
+    max-width: 978px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title_box {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    justify-items: start;
+    align-items: center;
+    width: 100%;
+}
+
+.red_box {
+    background-color: firebrick;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.red_box p {
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#page_container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#last_updated {
+    color: gold;
+}
+
+h1 {
+    color: white;
+}
