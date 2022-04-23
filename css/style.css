@@ -20,6 +20,33 @@ body {
     box-sizing: border-box;
 }
 
+h2 {
+    float: center;
+    width: 100%;
+    padding-bottom: 3px;
+    text-shadow: 0 0 3px rgb(177, 12, 12);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+ul {
+    border-top: 2px solid rgb(58, 57, 57);
+    border-bottom: 2px solid rgb(58, 57, 57);
+    float: center;
+    border: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    padding-bottom: 3px;
+    font-size: 24px;
+}
+
+p1 {
+    font-size: 20px;
+    font-style: italic;
+}
+
 .red_box p {
     color: white;
 }
