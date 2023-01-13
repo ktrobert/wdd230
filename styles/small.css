@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .title_box {
@@ -9,7 +9,7 @@ body {
     column-gap: 20px;
     justify-items: start;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 25px;
 }
 
 .red_box {
@@ -23,7 +23,7 @@ body {
 h2 {
     padding-bottom: 3px;
     text-shadow: 0 0 3px rgb(177, 12, 12);
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -33,7 +33,7 @@ ul {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom: 3px;
-    font-size: 24px;
+    font-size: 25px;
 }
 
 ul li {
@@ -41,14 +41,14 @@ ul li {
 }
 
 p1 {
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
 }
 
 footer {
     bottom: 0;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 .container {
@@ -58,4 +58,5 @@ footer {
 
 #last_updated {
     color: gold;
+    line-height: 5mm;
 }
