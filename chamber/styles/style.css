@@ -189,6 +189,18 @@ nav {
     display: none;
 }
 
+nav ul li #fb {
+    background: #0B84ED;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
 .navigation a {
     display: block;
     color: #fff;
