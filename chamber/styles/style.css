@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100");
+:root {
+    /* change the values below to your colors from your palette */
+    /* https://coolors.co/cb1b16-.....*/
+    --primary-color: #780000;
+    --secondary-color: #C1121F;
+    --accent1-color: #FDF0D5;
+    --accent2-color: #003049;
+    --accent3-color: #669BBC;
+    --accent4-color: white;
+    /* change the values below to your chosen font(s) */
+    --heading-font: "@import url('https://fonts.googleapis.com/css?family=Marcellus&family|Cinzel+Decorative:wght@700')";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #8C1C13;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: black;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #E7D7C1;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: black;
+    --nav-link-color: #BF4342;
+    --nav-background-color: #735751;
+    --nav-hover-link-color: #E7C24F;
+    --nav-hover-background-color: #396E94;
+}
+
+html {
+    background-color: #780000;
+}
+
+body {
+    background-color: #FDF0D5;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Marcellus";
+    color: #003049;
+}
+
+header>h1,
+header>h2 {
+    color: #fbf7f5;
+}
+
+footer {
+    text-align: center;
+    background-color: #fcfcfc;
+    padding: 0px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fdfaf2;
+    border: 2px solid #780000;
+    outline-style: outset;
+    outline-color: #780000;
+    font-family: "Marcellus";
+    font-size: 15px;
+}
+
+footer p {
+    color: #003049;
+    font-family: "Marcellus";
+    padding: 0px;
+    margin: 10px;
+}
+
+footer img {
+    width: 88px;
+    height: auto;
+}
+
+.footer_end {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts {
+    display: block;
+}
+
+p {
+    font-family: "Poppins";
+    color: #003049;
+    padding: 1em;
+}
+
+.date {
+    margin: 0.5rem;
+    border: 1px solid #780000;
+    padding: 0.75rem;
+    background-color: #780000;
+    flex-basis: 100%;
+}
+
+header {
+    background-color: #fcfcfc;
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fdfaf2;
+    border: 2px solid #780000;
+    outline-style: outset;
+    outline-color: #780000;
+    font-family: "Marcellus";
+    font-size: 20px;
+}
+
+.m {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #C1121F;
+    margin-left: 20px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.card {
+    border: 2px solid #780000;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fcfcfc;
+    min-height: 200px;
+}
+
+.card h2 {
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+.Spotlight {
+    border: 2px solid #780000;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fcfcfc;
+    min-height: 200px;
+}
+
+.Spotlight:nth-child(3) {
+    display: none;
+}
+
+header img {
+    width: 88px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #003049;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #888;
+}
+
+.responsive li {
+    display: block;
+}
+
+@media only screen and (min-width: 32.5em) {
+    header img {
+        width: 120px;
+    }
+    .headings h1 {
+        font-size: 2rem;
+    }
+    .m {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-right: 27px;
+        margin-left: 0px;
+    }
+    .contacts {
+        display: flex;
+        text-align: left;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .in_contacts {
+        display: flex;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .card {
+        display: grid;
+    }
+    .boxHero {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1;
+    }
+    .boxNews {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+    }
+    .boxSpotlight {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .boxJoin {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 4;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    .headings h1 {
+        font-size: 3rem;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation li a {
+        color: #f9f2e3;
+        font-family: "Poppins";
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 10px;
+    }
+    .card {
+        display: grid;
+    }
+    .boxHero {
+        grid-column: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .boxEvent {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .boxWeather {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .boxNews {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .boxSpotlight {
+        grid-column: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .boxJoin {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .Spotlight:nth-child(3) {
+        display: block;
+    }
+}
+
+--primary-color: #780000;
+--secondary-color: #C1121F;
+--accent1-color: #FDF0D5;
+--accent2-color: #003049;
+--accent3-color: #669BBC;
+--accent4-color: white;
