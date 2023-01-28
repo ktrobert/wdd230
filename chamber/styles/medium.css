@@ -1,0 +1,54 @@
+@media only screen and (min-width: 32.5em) {
+    header img {
+        width: 120px;
+    }
+    .headings h1 {
+        font-size: 1.6rem;
+    }
+    .m {
+        letter-spacing: 1.5pt;
+        font-size: 1.3rem;
+        //margin-right: 27px;
+        ///margin-left: 0px;
+    }
+    .contacts {
+        display: flex;
+        text-align: left;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .in_contacts {
+        display: flex;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .card {
+        display: grid;
+    }
+    .boxHero {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1;
+    }
+    .boxNews {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+    }
+    .boxSpotlight {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .boxJoin {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 4;
+    }
+}
