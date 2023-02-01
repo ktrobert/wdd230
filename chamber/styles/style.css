@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Sigmar+One");
 :root {
     /* change the values below to your colors from your palette */
     /* https://coolors.co/cb1b16-.....*/
@@ -9,9 +9,8 @@
     --accent3-color: #669BBC;
     --accent4-color: white;
     /* change the values below to your chosen font(s) */
-    --heading-font: "@import url('https://fonts.googleapis.com/css?family=Marcellus&family|Cinzel+Decorative:wght@700')";
-    --paragraph-font: Lato, Helvetica, sans-serif;
-    /* these colors below should be chosen from among your palette colors above */
+    /* these colors below sho--heading-font: "@import url('https://fonts.googleapis.com/css?family=Marcellus&family|Cinzel+Decorative:wght@700')";
+    --paragraph-font: Lato, Helvetica, sans-serif;uld be chosen from among your palette colors above */
     --headline-color-on-white: #8C1C13;
     /* headlines on a white background */
     --headline-color-on-color: white;
@@ -45,6 +44,33 @@ h5,
 h6 {
     font-family: "Marcellus";
     color: #003049;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: 100%;
+    height: 250px;
+}
+
+.heridiv {
+    position: relative;
+    border: 1px dashed cyan;
+}
+
+.wathersummary {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient(green, lightgreen);
+    border: 1px solid green;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
 }
 
 header>h1,

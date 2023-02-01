@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Sigmar+One&family=Ubuntu&family=Water+Brush&display=swap');
+body {
+    text-align: center;
+    font-family: 'Bowlby One', cursive;
+}
+
+button {
+    font-family: 'Bowlby One', cursive;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li button {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #666;
+}
+
+.herodiv {
+    margin: auto;
+    padding: 5px;
+    background-color: cyan;
+    position: center;
+    border: 1px solid cyan;
+    width: 60%;
+    min-height: 250px;
+}
+
+.hero-ph {
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 25px;
+    background-color: rgb(33, 198, 204);
+    border: 1px solid rgb(136, 9, 9);
+    width: 93%;
+    min-height: 200px;
+    font-family: 'Bowlby One', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.delete {
+    border: none;
+    background: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+}
