@@ -1,33 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100");
-:root {
-    /* change the values below to your colors from your palette */
-    /* https://coolors.co/cb1b16-.....*/
-    --primary-color: #780000;
-    --secondary-color: #C1121F;
-    --accent1-color: #FDF0D5;
-    --accent2-color: #003049;
-    --accent3-color: #669BBC;
-    --accent4-color: white;
-    /* change the values below to your chosen font(s) */
-    --heading-font: "@import url('https://fonts.googleapis.com/css?family=Marcellus&family|Cinzel+Decorative:wght@700')";
-    --paragraph-font: Lato, Helvetica, sans-serif;
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #8C1C13;
-    /* headlines on a white background */
-    --headline-color-on-color: white;
-    /* headlines on a colored background */
-    --paragraph-color-on-white: black;
-    /* paragraph text on a white background */
-    --paragraph-color-on-color: #E7D7C1;
-    /* paragraph text on a colored background */
-    --paragraph-background-color: black;
-    --nav-link-color: #BF4342;
-    --nav-background-color: #735751;
-    --nav-hover-link-color: #E7C24F;
-    --nav-hover-background-color: #396E94;
-}
-
-html {
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Cinzel:wght@400;500;600;900&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Sigmar+One&family=Ubuntu&family=Water+Brush&display=swap");
+:root html {
     background-color: #780000;
 }
 
@@ -93,21 +65,25 @@ footer img {
 
 p {
     font-family: "Poppins";
+    font-size: 0.85em;
     color: #003049;
-    padding: 1em;
+    padding: 0em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
 }
 
 .date {
-    margin: 0.5rem;
+    margin: 0.2rem;
     border: 1px solid #780000;
-    padding: 0.75rem;
+    padding: 0.2rem 0.75rem;
     background-color: #780000;
     flex-basis: 100%;
 }
 
 header {
     background-color: #fcfcfc;
-    padding: 5px 0;
+    padding: 0 0;
+    margin: 5px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -124,7 +100,6 @@ header {
     font-style: italic;
     letter-spacing: 1pt;
     color: #C1121F;
-    margin-left: 20px;
     font-size: .9rem;
     font-weight: bold;
 }
@@ -132,21 +107,35 @@ header {
 .card {
     border: 2px solid #780000;
     margin: 5px;
-    padding: 5px;
-    background-color: #fcfcfc;
+    padding: 10px;
+    background-color: rgb(174, 203, 248);
     min-height: 200px;
 }
 
 .card h2 {
-    font-size: 1em;
+    font-size: 1.8em;
     margin-top: 0px;
+    color: #05198b;
+    font-family: "Cinzel";
+    font-weight: 900;
+    text-shadow: 2px 1px 0px #fff, 3px 3px 5px #05198b;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    font-family: "Poppins";
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #C1121F;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .Spotlight {
     border: 2px solid #780000;
     margin: 5px;
     padding: 5px;
-    background-color: #fcfcfc;
+    background-color: #f5eaea;
     min-height: 200px;
 }
 
@@ -162,17 +151,19 @@ header img {
 .headings {
     display: flex;
     flex-direction: column;
+    margin: 0 0 0 10px;
 }
 
 .headings h1 {
     font-size: 1.5rem;
-    margin: 0 0 0 17px;
+    margin: 0 0 0 0;
 }
 
 nav {
     margin: 0 auto;
     max-width: 760px;
     background-color: #003049;
+    width: 100%;
 }
 
 .navigation {
@@ -202,8 +193,14 @@ nav {
     color: #888;
 }
 
-.socials li {
+.socials {
+    padding-inline-start: 20px;
     display: inline;
+}
+
+.socials li {
+    display: block;
+    width: 1em;
 }
 
 .fa {
@@ -224,6 +221,73 @@ nav {
     color: white;
 }
 
+.responsive {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .responsive li {
     display: block;
+}
+
+.heroDiv {
+    position: relative;
+    height: 100%;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+}
+
+.heroImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroTop {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.heroBottom {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    padding: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+button {
+    font-size: 25px;
+    background-color: #1de5f3;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(31, 28, 63);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button:hover {
+    background-color: #a8f9ff;
+}
+
+button:active {
+    background-color: #18b8c4;
+}
+
+.boxJoin {}
+
+.joinBtn {
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    max-height: 100px;
+}
+
+li {
+    font-family: "Poppins";
 }
