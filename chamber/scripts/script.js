@@ -15,10 +15,17 @@ last_updated_element.innerHTML = `Last Updated: ${document.lastModified}`;
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
 
+
 // derive the current date using a date object
 const now = new Date();
+let dateString = '';
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
     now
 );
+dateString = fulldate;
 
-datefield.innerHTML = `<span>${fulldate}</span>`;
+if (now.getDay() == 1 || now.getDay() == 2) {
+    dateString += '    🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
+}
+
+datefield.innerHTML = `<span>${dateString}</span>`;
