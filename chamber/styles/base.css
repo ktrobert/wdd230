@@ -16,12 +16,18 @@ h4,
 h5,
 h6 {
     font-family: "Marcellus";
+    font-size: 16px;
     color: #003049;
+}
+
+h4 {
+    font-family: "Marcellus";
+    color: #FDF0D5;
 }
 
 header>h1,
 header>h2 {
-    color: #fbf7f5;
+    color: #FDF0D5;
 }
 
 footer {
@@ -37,12 +43,13 @@ footer {
     outline-style: outset;
     outline-color: #780000;
     font-family: "Marcellus";
-    font-size: 15px;
+    font-size: 18px;
 }
 
 footer p {
-    color: #003049;
+    color: #030303;
     font-family: "Marcellus";
+    font-size: 16px;
     padding: 0px;
     margin: 10px;
 }
@@ -66,7 +73,8 @@ footer img {
 p {
     font-family: "Poppins";
     font-size: 0.85em;
-    color: #003049;
+    font-weight: 400;
+    color: #070808;
     padding: 0em;
     margin-block-start: 0.3em;
     margin-block-end: 0.3em;
@@ -108,7 +116,7 @@ header {
     border: 2px solid #780000;
     margin: 5px;
     padding: 10px;
-    background-color: rgb(174, 203, 248);
+    background-color: #780000;
     min-height: 200px;
 }
 
@@ -122,20 +130,30 @@ header {
 }
 
 .card h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: "Poppins";
     font-weight: 800;
     margin-top: 0px;
     margin-bottom: 5px;
-    color: #C1121F;
+    color: #FDF0D5;
     text-shadow: 1px 1px 1px #000;
+}
+
+.card h5 {
+    font-family: "Marcellus";
+    color: #FDF0D5;
+    font-size: 40px;
+}
+
+.card li {
+    color: #FDF0D5;
 }
 
 .Spotlight {
     border: 2px solid #780000;
     margin: 5px;
     padding: 5px;
-    background-color: #f5eaea;
+    background-color: #4175e6;
     min-height: 200px;
 }
 
@@ -279,8 +297,6 @@ button:active {
     background-color: #18b8c4;
 }
 
-.boxJoin {}
-
 .joinBtn {
     width: 100%;
     height: 100px;
@@ -290,4 +306,29 @@ button:active {
 
 li {
     font-family: "Poppins";
+    color: #f5eaea;
+}
+
+.link {
+    color: #FDF0D5;
+}
+
+.link:hover {
+    color: #FFFFFF;
+}
+
+.link:active {
+    color: #888
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature span {
+    font-family: "Poppins";
+    color: #FDF0D5;
+    font-size: 2em;
 }
