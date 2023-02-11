@@ -41,33 +41,42 @@
         <div class="cards">
             <article class="card boxHero">
                 <div class="heroDiv">
-                    <div class="heroImg">
-                        <img src="images/IMG-20220723-203044.jpg" alt="hero image">
-                    </div>
-                    <div class="heroTop">
-                        <h2>May the Fork be with you...</h2>
-                    </div>
-                    <button class="btn heroBottom">Join the Chamber</button>
+                    <!--<figure class="heroImage">
+                            <img src="images/wdd230-org (1).jpg" srcset="images/hero_small.png 1x, images/hero_medium.png 2x, images/hero_large.png 3x" alt="hero image">
+                        -->
+                    <picture class="heroImg">
+                        <source media="(max-width: 400px)" srcset="images/hero_400.png">
+                        <source media="(max-width: 700px)" srcset="images/hero_700.png">
+                        <source media="(max-width: 1500px)" srcset="images/hero_1500.png">
+                        <img src="images/wdd230-org.jpg" alt="hero image">
+
+                        <div class="heroTop">
+                            <h2>May the Fork be with you...</h2>
+                        </div>
+                        <button class="btn heroBottom">Join the Chamber</button>
+                    </picture>
+
+
                 </div>
             </article>
 
-            <article class="card boxRibbon">
+            <article class="card ribbon">
                 <h3>Ribbon Cutting</h3>
                 <img src="images/cutting-4.png" alt="ribbon image" width="150">
-                <h4>The Diamond Shack</h4>
-                <h4>Join us for the grand opening of the Diamond Shack, Thursday at 1:00 p.m.</h4>
+                <h6>Artsy Cottage</h6>
+                <h4>Join us for the grand opening of the Artsy Cottage, Thursday at 1:00 p.m.</h4>
                 <h4>
                     <a href="index.html" class="link">more info...</a>
                 </h4>
             </article>
 
-            <article class="card ">
+            <article class="card">
                 <h3>Weather</h3>
                 <div class="temperature">
-                    <span>33 &#176; </span><img src="images/cloudy.png " alt="weather image " width="100"></div>
+                    <span><span id="temperature">33</span> &#176; </span><img src="images/cloudy.png " alt="weather image " width="120"></div>
                 <h4>Partly Cloudy</h4>
-                <h4>Wind Speed: 2.5 km/h</h4>
-                <h4>Wind Chill: N/A</h4>
+                <h4>Wind Speed: <span id="windSpeed">3.5</span> mph</h4>
+                <h4>Wind Chill: <span id="windChill"></span></h4>
             </article>
 
 
@@ -97,26 +106,26 @@
 
             <article class="card boxSpotlight ">
                 <article class="Spotlight ">
-                    <h3>Thankful Transport</h3>
+                    <h3>Flash Movers</h3>
                     <img src="images/truck.png" alt="truck image" width="150">
-                    <h4>We get it there for you!</h4>
-                    <h4>hello@thankfultransport.com</h4>
-                    <h4>+999-999-9999 | Wbsite</h4>
-                </article>
-
-                <article class="Spotlight ">
-                    <h3>Build A Treefort</h3>
-                    <img src="images/Untitled-1.png" alt="treefort image" width="150">
-                    <h4>Over 1000 plans</h4>
-                    <h4>build@treefort.com</h4>
+                    <h4>We get it done before you move in!</h4>
+                    <h4>flash@movers.com</h4>
                     <h4>+999-999-9999 | Website</h4>
                 </article>
 
                 <article class="Spotlight ">
-                    <h3>Code Primera</h3>
+                    <h3>Whimsical Fun Fort</h3>
+                    <img src="images/Untitled-1.png" alt="treefort image" width="150">
+                    <h4>Over 1000 plans</h4>
+                    <h4>whimsicalfun@fort.com</h4>
+                    <h4>+999-999-9999 | Website</h4>
+                </article>
+
+                <article class="Spotlight ">
+                    <h3>Go Code Mode</h3>
                     <img src="images/code.png " alt="code image" width="150">
                     <h4>An after school coding instructional program.</h4>
-                    <h4>contact@codeprimera.com</h4>
+                    <h4>contact@gocodemode.com</h4>
                     <h4>+999-999-9999 | Website</h4>
                 </article>
             </article>
@@ -143,6 +152,7 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js " crossorigin='anonymous'></script>
 </body>
 

@@ -24,6 +24,9 @@
         grid-template-columns: 1fr 2fr 1fr;
         grid-gap: 10px;
     }
+    .card h2 {
+        font-size: 2.3em;
+    }
     .boxHero {
         grid-column: 2;
         grid-row-start: 1;
