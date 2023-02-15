@@ -5,6 +5,9 @@
     nav {
         width: 100%
     }
+    .smallMed {
+        grid-column: 2;
+    }
     .navigation {
         display: flex;
     }

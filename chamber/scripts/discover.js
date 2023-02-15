@@ -27,3 +27,29 @@ if ('IntersectionObserver' in window) {
         loadImages(img);
     });
 }
+
+// Days since last visit code
+
+let today = new Date();
+let lastVisit = Number(window.localStorage.getItem("last-visit"));
+let daysSince = Math.round((Date.now() - lastVisit) / 84600000);
+console.log(daysSince);
+const lastVisitDisplay = document.querySelector("#lastVisit");
+lastVisitDisplay.textContent = daysSince;
+
+lastVisit = Date.now();
+localStorage.setItem("last-visit", lastVisit);
+
+// Number of Visits code
+
+const visitsDisplay = document.querySelector("#visits");
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit!`;
+}
+
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);

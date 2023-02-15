@@ -12,13 +12,13 @@
 </head>
 
 <body>
-
     <header>
         <picture>
             <img src="images/logo_copy.png" alt="logo">
         </picture>
         <section class="headings">
             <h1>Discover</h1>
+            <div class="m">Chamber of Commerce</div>
         </section>
         <ul class="socials">
             <li><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" viewBox="0 0 50 50">    <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z" style="fill:#4267B2;"></path></svg></a></li>
@@ -27,8 +27,8 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a> </li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Resources</a></li>
             </ul>
         </nav>
@@ -37,27 +37,58 @@
         </div>
     </header>
     <main>
-        <h2>Discover what the Fork has to offer...</h2>
+        <div class="cards">
+            <article class="card smallMed">
+                <h3>Demographics</h3>
+                <h4>Population of AF: 34,422</h4>
+                <h4>Highest Median Income: $35,000</h4>
+                <h4>Number of Employed: 18,000</h4>
+                <h3>Number of Visits: <span id="visits"></span></h3>
+                <h4>Days Since Last Visit: <span id="lastVisit"></span></h4>
 
-        <img src="images/placeholder.png" data-src="image/AF1.jpg" alt="af mountain">
-        <picture>
-            <img src="images/placeholder.png" data-src="images/AF1.jpg" alt="af mountain">
-        </picture>
-        <picture>
-            <img src="images/placeholder.png" data-src="images/AF2.png" alt="af city">
-        </picture>
-        <picture>
-            <img src="images/placeholder.png" data-src="images/AF3.jpg" alt="shopping center">
-        </picture>
-        <picture>
-            <img src="images/placeholder.png" data-src="images/AF5.jpg" alt="trees">
-        </picture>
-        <picture>
-            <img src="images/placeholder.png" data-src="images/AF6.jpg" alt="temple">
-        </picture>
-        <picture>
-            <img src="images/placeholder.png" data-src="images/AF8.jpg" alt="train station">
-        </picture>
+
+            </article>
+            <article class="card smallMed">
+
+                <div class="discover">
+                    <div class="discoverDiv">
+                        <h2 class="heroTop">Discover what the Fork has to offer...</h2>
+                        <picture>
+                            <img src="images/placeholder.png" data-src="images/AF1.jpg" alt="af mountain">
+
+                        </picture>
+                        <h4>American Fork City has so much to offer. Timpanogos Cave and the Tibble Fork Resouvour are some of the most breathtaking sites sites to explore. The fall season is where it's at because of the extrourdinary views of the the vibrant
+                            fall colors.
+                        </h4>
+                    </div>
+
+                    <div>
+                        <picture>
+                            <img src="images/placeholder.png" data-src="images/AF2.png" alt="af city">
+                        </picture>
+                        <h4>Meet your neighbors! There's quite a charm in small town living. There is a great diversity of people.</h4>
+                    </div>
+                    <div>
+                        <picture>
+                            <img src="images/placeholder.png" data-src="images/AF3.jpg" alt="shopping center">
+                        </picture>
+                        <h4>Did anyone say SHOPPING? There is a shopping center near you. Whether it's spending time at the mall, go to the department, or get your groceries, we have got all your needs.</h4>
+                    </div>
+                    <div>
+                        <picture>
+                            <img src="images/placeholder.png" data-src="images/AF6.jpg" alt="temple">
+                        </picture>
+                        <h4>Timpogos Temple is the heart of American Fork City. Otherwise known as the Lord's House. A breathtaking building that sits by the mountain.</h4>
+                    </div>
+                    <div>
+                        <picture>
+                            <img src="images/placeholder.png" data-src="images/AF8.jpg" alt="train station">
+                        </picture>
+                        <h4>Need transportation? A newly built FrontRunner to help those to get away from traffic and protect the environment.</h4>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
     <footer>
         <div class="contacts ">
@@ -78,7 +109,8 @@
             <p id="last_updated">Last Updated: date</p>
         </div>
     </footer>
-    <script scr="discover.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/discover.js"></script>
 </body>
 
 </html>
