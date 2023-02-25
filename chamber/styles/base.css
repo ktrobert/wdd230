@@ -29,6 +29,10 @@ h4 {
     padding-top: 0%;
 }
 
+.form {
+    text-align: left;
+}
+
 header>h1,
 header>h2 {
     color: #FDF0D5;
@@ -164,6 +168,20 @@ header {
 
 .card li {
     color: #FDF0D5;
+}
+
+.form {
+    color: black;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.white-box {
+    background-color: white;
+    min-height: 200px;
 }
 
 .Spotlight {
@@ -381,4 +399,125 @@ li {
 .discoverDiv {
     position: relative;
     height: auto;
+}
+
+:root {
+    --back: rgb(205, 165, 46);
+    --back2: hsl(32, 60%, 95%);
+    --foredark: rgba(43, 217, 244, 0.979);
+    --forelight: #410303;
+    --border: hsl(0, 0%, 98%);
+    --borderlight: hsl(0, 54%, 40%);
+    --shadow: hsl(0, 0%, 50%);
+    --zebra: rgb(205, 165, 46);
+}
+
+table {
+    border: thin solid var(--border);
+    box-shadow: 0 0 7px var(--shadow);
+    border-collapse: collapse;
+    background-color: rgb(131, 169, 212);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .75rem;
+    color: rgb(255, 253, 253);
+}
+
+tr:first-child th,
+.highlight {
+    background-color: var(--back);
+    color: var(--forelight);
+}
+
+th,
+td {
+    padding: 7px 3px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--back2);
+    font-size: 15px;
+    font-weight: bold;
+    color: #410303;
+}
+
+td {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #410303;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+
+/*-------------Form--------------*/
+
+form fieldset {
+    margin: 1rem 2rem;
+    margin-left: 1rem;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 1%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-apperarance: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
 }

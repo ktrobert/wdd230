@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>American Fork Chamber of Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="styles/base.css" />
+    <link type="text/css" rel="stylesheet" href="styles/medium.css" />
+    <link type="text/css" rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/commerce-logo.webp" alt="logo">
+        </picture>
+        <section class="headings">
+            <h1>American Fork City</h1>
+            <div class="m">Join Us</div>
+        </section>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" viewBox="0 0 50 50">    <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z" style="fill:#4267B2;"></path></svg></a></li>
+            <li><a href="https://www.twitter.com"><svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg"><path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A 70,  70 0 0 1 370, 523 A  70,  70 0 0 0 401, 521 A  70,  70 0 0 1 344, 455 A  70,  70 0 0 0 372, 460 A  70,  70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A  67,  67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A  65,  65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A  65,  65 0 0 1 630, 425 Z" style="fill:#3BA9EE;"/></svg></a></li>
+        </ul>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="date">
+            <span>Thursday, February 2, 2023</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="cards">
+            <article class="card smallMed">
+                <h3>Membership Submission Form</h3>
+                <section class="headings">
+                    <div class="form white-box">
+                        <form method="get" action="thankyou.html">
+                            <label>Applicant Information</label>
+
+                            <fieldset>
+                                <label class="top">First Name*
+                                    <input type="text" id="fname" name="fname" required>
+                                </label>
+                                <label class="top">Last Name*
+                                    <input type="text" id="lname" name="lname" required>
+                                </label>
+                                <label class="top">Title
+                                    <input type="text" id="title" name="title" pattern="([A-Za-z\- ]){7,}">
+                                </label>
+                                <label class="top">Email*
+                                    <input type="text" id="email" name="email" placeholder="someone@gmail.com" size="30" required>
+                                </label>
+                                <label class="top">Phone number*
+                                    <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
+                                </label>
+                                <label class="top">Business Title*
+                                    <input type="text" id="business" name="business" required>
+                                </label>
+                            </fieldset>
+                            <label>Membership Level</label>
+
+                            <fieldset>
+                                <label class="sbs"><input type="radio" name="plan" value="NP">NP Membership is for non profit organizations and there is no fee</label>
+                                <label class="sbs"><input type="radio" name="plan" value="Bronze">Bronze Membership</label>
+                                <label class="sbs"><input type="radio" name="plan" value="Silver">Silver Membership</label>
+                                <label class="sbs"><input type="radio" name="plan" value="Gold">Gold Membership</label>
+                            </fieldset>
+                            <label>Description</label>
+
+                            <fieldset>
+                                <label class="top">Brief Description of Business<br>
+                                    <textarea id="description" name="description" rows="5" cols="36"></textarea>
+                                </label>
+
+                                <input id="datetime" type="hidden" name="datetime" value="">
+
+                            </fieldset>
+                            <br><input type="submit" value="Submit my Plan" class="submitBtn">
+                        </form>
+
+                        <p>If you click the "Submit Plan" button, the form-data will be sent to a page called "thankyou.html".</p>
+                    </div>
+                </section>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contacts ">
+            <div class="in_contacts ">
+                <div> <img src="images/logo_copy.png " alt="logo"></div>
+                <div>
+                    <p><strong>American Fork Chamber of Commerce</strong></p>
+                    <p>665 E 220 N, <br>American Fork, UT 84003</p>
+                </div>
+            </div>
+            <div>
+                <p>info@afcc.org <br> +(801) 205-2938 <br></p>
+                <a href="https://www.google.com/maps/place/665+E+220+N,+American+Fork,+UT+84003/@40.3813916,-111.7825115,17z/data=!4m5!3m4!1s0x874d8143ec346ded:0x582c64b36f41334c!8m2!3d40.3813875!4d-111.7803228 ">Link to Map</a>
+            </div>
+        </div>
+        <div class="footer_end">
+            <p id="copyright">© year | Kendra Roberts | Utah</p>
+            <p id="last_updated">Last Updated: date</p>
+        </div>
+    </footer>
+</body>
+
+</html>
