@@ -1,0 +1,60 @@
+{
+    "business": [{
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=15579&type=logo",
+            "companyName": "King & McCleary LLC",
+            "phoneNumber": "801-756-2915",
+            "address": "240 W Main St American Fork, UT 84003",
+            "url": "https://www.kingandmccleary.com/"
+        },
+        {
+            "imageurl": "https://chamberorganizer.com/afchamber/photos/MP734437banP.JPG",
+            "companyName": "Silhouette America",
+            "phoneNumber": "801-983-8937",
+            "address": "618 N 2000 W, Bldg #2 Lindon, UT 84042",
+            "url": "https://www.silhouetteamerica.com/"
+        },
+        {
+            "imageurl": "https://www.chamberorganizer.com/afchamber/photos/MP8995132103230900P.JPG",
+            "companyName": "Handcrafted Solutions",
+            "phoneNumber": "801-876-6300",
+            "address": "1316 E Springwater Way Eagle Mountain, UT 84005",
+            "url": "https://handcrafted.solutions/"
+        },
+        {
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=17328&type=logo",
+            "companyName": "Feminine Forms",
+            "phoneNumber": "801-770-0600",
+            "address": "345 S 500 E American Fork, UT 84003",
+            "url": "https://www.facebook.com/femforms/"
+        },
+        {
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=25421&type=logo",
+            "companyName": "Hee Haw Farms",
+            "phoneNumber": "801-368-0255",
+            "address": "95 S 2000 W Pleasant Grove, UT 84062",
+            "url": "https://www.heehawfarms.com/"
+        },
+        {
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=14960&type=logo",
+            "companyName": "Helpside",
+            "phoneNumber": "801-473-7879",
+            "address": "395 W 600 N Lindon, UT 84042",
+            "url": "https://www.helpside.com/"
+        },
+        {
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=8955&type=logo",
+            "companyName": "Country View Veterinary Hospital",
+            "phoneNumber": "801-763-1900",
+            "address": "582 W Pacific Dr American Fork, UT 84003",
+            "url": "https://countryviewvet.com/"
+        },
+        {
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=17393&type=logo",
+            "companyName": "Inquisitive Minds Montessori",
+            "phoneNumber": "801-559-7253",
+            "address": "100 N 100 W American Fork, UT 84003",
+            "url": "https://iqmutah.com/"
+        }
+
+    ]
+}
