@@ -40,8 +40,6 @@ const displayDirectory = (businesses) => {
         let a = document.createElement('a');
 
 
-
-        // Build the h2 content out to show the prophet's full name - finish the template string
         h2.textContent = `${business.companyName}`;
         h3.textContent = `${business.phoneNumber}`;
         p.textContent = `${business.address}`;
