@@ -61,7 +61,20 @@
             "phoneNumber": "801-225-8474",
             "address": "1134 E 300 N, Ste 101 American Fork, UT 84003",
             "url": "https://drilldownsolution.com/"
+        },
+        {
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=16340&type=logo",
+            "companyName": "Ultimate Inflatables",
+            "phoneNumber": "891-916-9988",
+            "address": "629 W 200 S American Fork, UT 84003",
+            "url": "https://ultimateinflatables.com/"
+        },
+        {
+            "imageurl": "https://docuteam.b-cdn.net/img.php?store=71419&type=logo",
+            "companyName": "Alpine Airway Wellness",
+            "phoneNumber": "801-513-3994",
+            "address": "60 W Main St Ct, Ste 100 Alpine, UT 84004",
+            "url": "https://alpineairwaywellness.com/"
         }
-
     ]
 }
