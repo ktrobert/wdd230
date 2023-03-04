@@ -330,8 +330,8 @@
     
     button {
         font-size: 25px;
-        background-color: #0fc8f7;
-        color: #ffffff;
+        background-color: #09ccf8;
+        color: white;
         text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(31, 28, 63);
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -523,10 +523,10 @@
     /*following is for directory grid and list*/
     
     .menu {
-        margin: 0rem auto;
-        border: 3px solid rgba(0, 0, 0, 0.1);
+        margin: .3rem;
+        border: 3px solid #003049;
         padding: 0.5rem;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: #003049;
         text-align: center;
     }
     
