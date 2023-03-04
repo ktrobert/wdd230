@@ -104,6 +104,7 @@
         padding: 0.2rem 0.75rem;
         background-color: #780000;
         flex-basis: 100%;
+        text-align: center;
     }
     
     header {
@@ -231,7 +232,7 @@
     
     .navigation {
         background-color: #003049;
-        max-width: 760px;
+        max-width: 1330px;
         margin: 0 auto;
         list-style: none;
         text-align: center;
@@ -523,7 +524,7 @@
     
     .menu {
         margin: 0rem auto;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 3px solid rgba(0, 0, 0, 0.1);
         padding: 0.5rem;
         background-color: #003049;
         text-align: center;
@@ -538,25 +539,28 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         align-items: center;
-        padding: 1em;
+        padding: 1.5em;
+        column-gap: 1em;
+        row-gap: 1em;
     }
     
     .grid section {
         height: 300px;
         flex-direction: column;
         text-align: center;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 0.5rem;
+        border: 5px solid #760808;
         background-color: #fff;
     }
     
     .grid img {
         height: 175px;
         width: 175px;
+        padding: 1em;
     }
     
     .grid section>* {
         margin: 0.1rem;
+        padding: 0.5em;
     }
     
     .grid h4 {
