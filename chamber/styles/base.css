@@ -534,11 +534,6 @@
         font-weight: 700;
     }
     
-    article,
-    section {
-        margin: 0.5rem;
-    }
-    
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -608,11 +603,11 @@
         color: black;
     }
     
-    section h3 {
+    .directory section h3 {
         font-size: 1.5rem;
     }
     
-    section a {
+    .directory section a {
         font-family: "Roboto", Arial, sans-serif;
         font-size: 0.9rem;
         font-size: 16px;
@@ -620,7 +615,7 @@
         font-weight: bold;
     }
     
-    img {
+    .directory img {
         height: 75px;
         max-width: 100%;
         /* Images are jerks - Seattle*/

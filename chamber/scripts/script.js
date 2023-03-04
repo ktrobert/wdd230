@@ -2,7 +2,9 @@ function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-
+function joinLocation() {
+    location.href = "join.html";
+}
 
 const copyright_element = document.querySelector("#copyright");
 const year = new Date().getFullYear();
