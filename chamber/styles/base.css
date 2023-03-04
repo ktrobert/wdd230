@@ -23,7 +23,7 @@
     
     h4 {
         font-family: "Marcellus";
-        color: #FDF0D5;
+        color: white;
         padding: .8em;
         padding-bottom: 0%;
         padding-top: 0%;
@@ -35,7 +35,7 @@
     
     header>h1,
     header>h2 {
-        color: #FDF0D5;
+        color: #f8f6f2;
     }
     
     footer {
@@ -90,7 +90,7 @@
     
     h6 {
         font-size: 40px;
-        color: #efd720;
+        color: #fffffb;
         text-shadow: 2px 2px 2px #410303;
         font-family: "Water Brush";
         padding: 0em;
@@ -143,10 +143,9 @@
         text-align: center;
         font-size: 1.5em;
         margin-top: 0px;
-        color: #541916;
+        color: #1e46e9;
         font-family: "Cinzel";
         font-weight: 900;
-        text-shadow: 2px 1px 0px #b38c8c, 3px 3px 5px #05198b;
     }
     
     .card h3 {
@@ -283,7 +282,7 @@
     }
     
     .fa-facebook {
-        background: #3465cd;
+        background: #4175e6;
         color: white;
     }
     
@@ -330,7 +329,7 @@
     
     button {
         font-size: 25px;
-        background-color: #2c50dd;
+        background-color: #4175e6;
         color: white;
         text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(31, 28, 63);
         border-radius: 20px;
