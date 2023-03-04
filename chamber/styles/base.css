@@ -141,11 +141,13 @@
     
     .card h2 {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
         margin-top: 0px;
         color: #1e46e9;
         font-family: "Cinzel";
         font-weight: 900;
+        background-color: white;
+        border-radius: 4px;
     }
     
     .card h3 {
@@ -424,8 +426,7 @@
     caption {
         padding: 10px;
         caption-side: bottom;
-        color: var(--back);
-        font-size: .75rem;
+        font-size: .9rem;
         color: rgb(255, 253, 253);
     }
     
