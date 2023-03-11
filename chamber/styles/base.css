@@ -221,20 +221,23 @@
     
     nav {
         margin: 0 auto;
-        width: 100%;
+        width: 100%
     }
     
     .navigation {
         background-color: #003049;
+
         max-width: 1330px;
         margin: 0 auto;
         list-style: none;
         text-align: center;
         padding: 0;
+        
     }
     
     .navigation li {
         display: none;
+      
     }
     
     .navigation li:first-child {
@@ -567,7 +570,9 @@
     .grid h4 {
         color: black;
     }
-    
+    .grid h2 {
+        color: black;
+    }
     .thin {
         min-height: auto;
     }
@@ -607,6 +612,10 @@
     .list section h4 {
         color: black;
     }
+    .list section h2 {
+        color: black;
+    }
+    
     
     .directory section h3 {
         font-size: 1.5rem;
