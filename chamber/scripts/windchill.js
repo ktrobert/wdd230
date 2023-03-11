@@ -14,9 +14,25 @@ if (temperature <= 50 && windSpeed > 3.0) {
 }
 */
 
+
+function calculateWindChill(temperature, windSpeed){
+    if (temperature <= 50 && windSpeed > 3.0) {
+        let windChill = 35.74 +
+            0.6215 * temperature -
+            35.75 * Math.pow(windSpeed, 0.16) +
+            0.4275 * temperature * Math.pow(windSpeed, 0.16);
+        return windChill.toFixed(2);
+    } else {
+        return "N/A";
+    } 
+}
+
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const windChill = document.getElementById("windChill");
+const windSpeed = document.getElementById("windSpeed");
+
 
 const weatherLocation = 'American Fork';
 const weatherUnits = 'imperial';
@@ -50,4 +66,8 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+
+    windSpeed.textContent = weatherData.wind.speed;
+    windChill.textContent = calculateWindChill(weatherData.main.temp,weatherData.wind.speed);
+
 }
