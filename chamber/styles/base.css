@@ -433,8 +433,10 @@
         font-family: "Poppins";
         caption-side: bottom;
         font-size: 20px;
-        color: rgb(255, 253, 253);
+        color: #FDF0D5;
         text-transform: capitalize;
+        border-bottom: 2px solid #FDF0D5;
+        text-align: center;
     }
     
     tr:first-child th,
@@ -640,4 +642,5 @@
         font-family: "Poppins";
         font-weight: bold;
         font-size: 25px;
+        color: #FDF0D5;
     }
