@@ -17,7 +17,7 @@
     h6 {
         font-family: "Marcellus";
         font-size: 16px;
-        color: #003049;
+        color: #FDF0D5;
         text-align: center;
     }
     
@@ -27,7 +27,7 @@
     
     header>h1,
     header>h2 {
-        color: white;
+        color: rgb(246, 242, 242);
     }
     
     footer {
@@ -149,7 +149,7 @@
         font-weight: 800;
         margin-top: 0px;
         margin-bottom: 5px;
-        color: white;
+        color: rgb(242, 233, 220);
         text-shadow: 1px 1px 1px #000;
     }
     
@@ -216,6 +216,7 @@
     .headings h1 {
         font-size: 1.5rem;
         margin: 0 0 0 0;
+        color: #003049;
     }
     
     nav {
@@ -413,6 +414,7 @@
         background-color: rgb(131, 169, 212);
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
     }
     
     caption {
@@ -420,6 +422,15 @@
         caption-side: bottom;
         font-size: .9rem;
         color: rgb(255, 253, 253);
+    }
+    
+    .weathercaption {
+        padding: 10px;
+        font-family: "Poppins";
+        caption-side: bottom;
+        font-size: 20px;
+        color: rgb(255, 253, 253);
+        text-transform: capitalize;
     }
     
     tr:first-child th,
@@ -613,4 +624,10 @@
         height: 75px;
         max-width: 100%;
         /* Images are jerks - Seattle*/
+    }
+    
+    .card .weatherCity {
+        font-family: "Poppins";
+        font-weight: bold;
+        font-size: 25px;
     }
