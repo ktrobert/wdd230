@@ -400,21 +400,22 @@
     }
     
      :root {
-        --back: rgb(205, 165, 46);
+        --back: rgb(235, 145, 131);
         --back2: hsl(32, 60%, 95%);
         --foredark: rgba(43, 217, 244, 0.979);
         --forelight: #410303;
         --border: hsl(0, 0%, 98%);
         --borderlight: hsl(0, 54%, 40%);
         --shadow: hsl(0, 0%, 50%);
-        --zebra: rgb(205, 165, 46);
+        --zebra: rgb(246, 221, 147);
     }
     
     table {
         border: thin solid var(--border);
         box-shadow: 0 0 7px var(--shadow);
         border-collapse: collapse;
-        background-color: rgb(131, 169, 212);
+        background-color: rgb(199, 214, 230);
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
