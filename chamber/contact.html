@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>American Fork Chamber of Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="styles/base.css" />
+    <link type="text/css" rel="stylesheet" href="styles/medium.css" />
+    <link type="text/css" rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/commerce-logo.webp" alt="logo">
+        </picture>
+        <section class="headings">
+            <h1>American Fork City</h1>
+            <div class="m">Join Us</div>
+        </section>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" viewBox="0 0 50 50">    <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z" style="fill:#4267B2;"></path></svg></a></li>
+            <li><a href="https://www.twitter.com"><svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg"><path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A 70,  70 0 0 1 370, 523 A  70,  70 0 0 0 401, 521 A  70,  70 0 0 1 344, 455 A  70,  70 0 0 0 372, 460 A  70,  70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A  67,  67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A  65,  65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A  65,  65 0 0 1 630, 425 Z" style="fill:#3BA9EE;"/></svg></a></li>
+        </ul>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date">
+            <span>Thursday, February 2, 2023</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="cards">
+            <article class="card smallMed">
+                <h3>Contact Us</h3>
+                <section class="headings">
+                    <div class="form white-box">
+                        <article>
+                            <h2>Visit Us</h2>
+                        </article>
+                        <article>                            
+                            <p><strong>American Fork City Chamber of Commerce</strong></p>
+                            <p>665 E 220 N, <br>American Fork, UT 84003</p>
+                            <p>(801) 205-2938</p>
+                            <p>kendra/info@afcc.org</p><br><br>
+                        </article>
+                        <article>
+                            <p>Monday – Thursday: 9:00 a.m. to 4:30 p.m.</p>
+                            <p>Friday: By Appointment Only</p>
+                        </article><br>
+                        <article>
+                            <p>Send us your questions or comments using the form below. We will respond promptly to your inquiry.</p>
+                        </article>
+                        <article>
+                            <h2>Contact Info</h2>
+                        </article>
+                        <form method="get" action="thankyou.html">
+                           
+                            <fieldset>
+                                <label class="top">Name*
+                                    <input type="text" id="name" name="name" required>
+                                </label>
+                                <label class="top">Organization
+                                    <input type="text" id="business" name="business">
+                                </label>
+                                <label class="top">Mailing Address
+                                <div class="form-group">
+                                        <input type="street" 
+                                               class="form-control" 
+                                               id="autocomplete" 
+                                               placeholder="Street"><br>
+                                        
+                                        <input type="city" 
+                                               class="form-control" 
+                                               id="inputCity" 
+                                               placeholder="City"><br>
+                                        
+                                        <input type="state" 
+                                               class="form-control" 
+                                               id="inputState" 
+                                               placeholder="State"><br>
+                                        
+                                        <input type="zip" 
+                                               class="form-control" 
+                                               id="inputZip" 
+                                               placeholder="Zip"><br>
+                                        
+                                        <input type="county" 
+                                               class="form-control" 
+                                               id="inputCounty" 
+                                               placeholder="County"><br>
+                                               <input type="country" 
+                                               class="form-control" 
+                                               id="inputCountry" 
+                                               placeholder="Country">
+                                    </div></label><br><br><br>
+                                    
+                                <label class="top"><br><br><br><br><br>Phone number*
+                                    <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
+                                </label>
+                                 <label class="top">Email*
+                                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" size="30" required>
+                                </label>
+                                <label class="top">Comments/Questions<br>
+                                    <textarea rows="6" cols="45" name="comment" form="usrform"></textarea>
+                                        </label>
+                                    </fieldset>
+                                    <br><input type="submit" value="Submit" class="submitBtn">
+                        </form>
+                                </section>
+
+                        </main>
+
+                        <footer>
+                            <div class="contacts ">
+                                <div class="in_contacts ">
+                                    <div> <img src="images/logo_copy.png " alt="logo"></div>
+                                    <div>
+                                        <p><strong>American Fork City Chamber of Commerce</strong></p>
+                                        <p>665 E 220 N, <br>American Fork, UT 84003</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>info@afcc.org <br> +(801) 205-2938 <br></p>
+                                    <a href="https://www.google.com/maps/place/665+E+220+N,+American+Fork,+UT+84003/@40.3813916,-111.7825115,17z/data=!4m5!3m4!1s0x874d8143ec346ded:0x582c64b36f41334c!8m2!3d40.3813875!4d-111.7803228 ">Link to Map</a>
+                                </div>
+                            </div>
+                            <div class="footer_end">
+                                <p id="copyright">© year | Kendra Roberts | Utah</p>
+                                <p id="last_updated">Last Updated: date</p>
+                            </div>
+                        </footer>
+                        <script src="scripts/script.js"></script>
+                    </body>
+                    
+                    </html>      

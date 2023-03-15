@@ -476,12 +476,15 @@
         border: 1px solid #445ba9;
         border-radius: 10px;
         padding: .5rem 1%;
+        max-width: 22rem;
+    
     }
     
     form legend {
         color: #445ba9;
         margin: 0 1rem;
         padding: 0 .5rem;
+        
     }
     
     form label.top,
@@ -490,6 +493,7 @@
         padding-top: 1rem;
         color: #9c2c13;
         font-size: .8rem;
+       
     }
     
     form label.top input,
@@ -501,7 +505,7 @@
         padding: .75rem;
         color: #555;
         width: 100%;
-        max-width: 20rem;
+        max-width: 19rem;
         background-color: rgba(0, 0, 0, 0.1);
     }
     
@@ -644,3 +648,42 @@
         font-size: 25px;
         color: #FDF0D5;
     }
+    /*Contact page*/
+input, label {
+  margin: 5px 5px;
+}
+
+.form-group {
+  padding-top: 1px;
+  width: 450px;
+  padding-bottom: 10px;
+ 
+}
+
+.form-control {
+  float: left;
+}
+
+#inputStreet {
+  width: 100%;
+}
+
+#inputCity {
+  width: 47.5%;
+}
+
+#inputState {
+  width: 15%;
+}
+
+#inputZip {
+  width: 22.5%;
+}
+
+#inputCounty {
+  width: 40%;
+}
+
+#inputCountry {
+  width: 50%;
+}
