@@ -59,9 +59,11 @@
         grid-column: 1;
         grid-row: 3;
     }
-    .Spotlight:nth-child(3) {
+    #spotlight3{
         display: block;
     }
+    
+    
 }
 
 

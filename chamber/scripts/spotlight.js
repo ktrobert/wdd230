@@ -19,11 +19,17 @@ function showDirectories(data){
     
     randomIndex = Math.floor(Math.random()*businesses.length);
     let randomDirectory2 = businesses[randomIndex];
-
+    businesses.splice(randomIndex, 1);
+    
+    randomIndex = Math.floor(Math.random()*businesses.length);
+    let randomDirectory3 = businesses[randomIndex];
+   
     const article1 = document.querySelector("#spotlight1");
     displayDirectory(randomDirectory1,article1);
     const article2 = document.querySelector("#spotlight2");
     displayDirectory(randomDirectory2,article2)
+    const article3 = document.querySelector("#spotlight3");
+    displayDirectory(randomDirectory3,article3)
 }
 
 
@@ -34,7 +40,7 @@ const displayDirectory = (business, article) => {
         // Create elements to add to the div.cards element
         let portrait = document.createElement('img');
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
+        let h2 = document.createElement('h4');
         let h3 = document.createElement('h4')
         let p = document.createElement('p');
         let a = document.createElement('a');
