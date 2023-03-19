@@ -12,8 +12,8 @@
     .contacts {
         display: flex;
         text-align: left;
-        width: 80%;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: center;
     }
     .in_contacts {
         display: flex;
