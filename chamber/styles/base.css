@@ -29,13 +29,11 @@
     header>h2 {
         color: rgb(246, 242, 242);
     }
-    
+   
     footer {
         text-align: center;
         background-color: #ffffff;
         padding: 0px 0;
-        display:grid;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         color: #fdfaf2;
@@ -50,46 +48,56 @@
         color: #030303;
         font-family: "Marcellus";
         font-size: 25px;
-        line-height: 1px;
+        line-height: 25px;
         margin-top: 40px;
         margin-bottom: .5px;
         padding-left: 5px;
-        text-align: left;
-      
-    
     }
-
-    
+    footer h2 {
+        color: #C1121F;
+        font-family: "Marcellus";  
+        font-size: 14px; 
+        font-style: italic;
+        text-align: left;
+       
+    }
+    footer h3 {
+        display: inline-block;
+        font-family: "Poppins";
+        font-size: 16px;
+        text-indent: 30px;
+        margin-top:30px;
+    }
     footer p {
         color: #030303;
         font-family: "Marcellus";
         font-size: 16px;
         padding-bottom: 2px;
         margin: 10px;
-        text-align: left;
-       
-        
-    }
+        text-align: center;
+      }
     
-    footer img {
+    .footer img {
         width: 88px;
         height: auto;
         padding-top: 10px;
        
     }
-    
-    F .footer_end {
+    .footer a:hover {
+        color:gray;
+
+
+    }   
+    .footer_end {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
+        display: grid;
+        justify-content: center;    
     
     }
     
     .contacts {
         display: block;
-    
+        
     }
     
     p {
@@ -101,15 +109,13 @@
         margin-block-start: 0.5em;
         margin-block-end: 0.5em;
     }
-    
+
     h6 {
-        font-size: 40px;
-        color: #f2df50;
-        text-shadow: 2px 2px 2px #410303;
-        font-family: "Water Brush";
+        font-size: 18px;
+        color: #0b0b0b;
+        font-family: "Marcellus";
         padding: 0em;
-        margin-block-start: 0.3em;
-        margin-block-end: 0.3em;
+       
     }
     
     .date {
@@ -158,10 +164,10 @@
         text-align: center;
         font-size: 2em;
         margin-top: 0px;
-        color: #1e47ec;
+        color: #091f78;
         font-family: "Cinzel";
         font-weight: 900;
-        text-shadow:  2px 1px 8px #f2b817;
+        text-shadow:  2px 1px 8px #342d19;
         border-radius: 4px;
     }
     
@@ -224,12 +230,9 @@
 
     .spotlight img {
         height: 240px;
-        width: 240px; 
- 
-     
+        width: 240px;
+        object-fit: contain;  
     }
-    
-    
     
     .spotlight h4 {
         color: black;
@@ -525,11 +528,11 @@
     
     form fieldset {
         margin: 0rem 0rem;
-        //margin-left: 0rem;
+     
         border: 1px solid #445ba9;
         border-radius: 10px;
-        //padding: .5rem 1%;
-        //max-width: 22rem;
+       
+      
     
     }
     
@@ -619,7 +622,7 @@
     .grid img {
         height: 175px;
         width: 175px;
-        padding: 1em;
+
     }
     
     .grid section>* {
@@ -679,6 +682,7 @@
     
     .directory section h3 {
         font-size: 1.5rem;
+       
     }
     
     .directory section a {
@@ -690,8 +694,10 @@
     }
     
     .directory img {
-        height: 75px;
+        height: 120px;
         max-width: 100%;
+        object-fit:contain;
+
         /* Images are jerks - Seattle*/
     }
     
@@ -705,7 +711,6 @@
 input, label {
   margin: 5px 5px;
 }
-
 
 #inputStreet {
   width: 100%;
@@ -730,3 +735,46 @@ input, label {
 #inputCountry {
   width: 50%;
 }
+/* chat page */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
