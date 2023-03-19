@@ -167,10 +167,9 @@
         text-align: center;
         font-size: 2em;
         margin-top: 0px;
-        color: #091f78;
+        color: #04145b;
         font-family: "Cinzel";
         font-weight: 900;
-        text-shadow:  2px 1px 8px #342d19;
         border-radius: 4px;
     }
     
@@ -482,9 +481,9 @@
         padding: 5px;
         caption-side: bottom;
         font-style: italic;
-        font-size: 13px;
-        font-family: "poppins";
-        color: rgb(255, 253, 253);
+        font-size: 14px;
+        font-family: "marcellus";
+        color: white;
     }
     
     .weathercaption {
