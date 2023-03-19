@@ -31,3 +31,4 @@ if (now.getDay() == 1 || now.getDay() == 2) {
 }
 
 datefield.innerHTML = `<span>${dateString}</span>`;
+
