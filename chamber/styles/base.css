@@ -167,10 +167,12 @@
         text-align: center;
         font-size: 2em;
         margin-top: 0px;
-        color: #04145b;
+        color: #0f2db0;
+        background-color: white;
         font-family: "Cinzel";
         font-weight: 900;
-        border-radius: 4px;
+        
+
     }
     
     .card h3 {
@@ -210,7 +212,9 @@
         min-height: 200px;
         font-size: 20px;
     }
-    
+    .h2 {
+        font-size: 13px;
+    }
     .spotlight {
         display: grid;
         grid-template-columns: 1fr;
@@ -371,6 +375,8 @@
         position: absolute;
         top: 10px;
         left: 10px;
+        box-shadow: 2px 2px 5px rgb(72, 62, 124);;
+
     }
     
     .heroBottom {
