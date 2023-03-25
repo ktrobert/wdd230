@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bountiful Foods</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="styles/base.css" />
+    <link type="text/css" rel="stylesheet" href="styles/medium.css" />
+    <link type="text/css" rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+     
+    <header>
+        
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a> </li>
+                <li><a href="bountiful.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <picture>
+            <img src="images/bountFood.png" alt="logo" width="30%" class="center">
+        </picture></section>
+   
+        <div class="date">
+            <span>Thursday, February 2, 2023</span>
+        </div>
+    </header>
+    <main>
+        <h1>About us</h1>
+
+        <div class="container">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+              <p>Shop with us, or leave us a message:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h1>Bountiful Foods</h1>
+                <h2>2808 Roosevelt St, Carlsbad, CA 92008</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.9704889638415!2d-117.34870189999995!3d33.16240159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc721ac2d22737%3A0xf22d14179baef82c!2s2808%20Roosevelt%20St%2C%20Carlsbad%2C%20CA%2092008!5e0!3m2!1sen!2sus!4v1679417289853!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <input type="text" id="inputCountry" name="country" placeholder="Country">
+                  <label for="phonenumber">Phone number</label>
+                  <input type="text" id="phone" name="phone" placeholder="1235551234">
+                  <label for="top">Email*</label>
+                  <input type="text" id="email" name="email" placeholder="someone@gmail.com" required><br>
+                  <label for="subject">Comments/ Questions</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              </div>
+    </main>
+    <footer>
+        <section>
+            <ul class="socials">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </ul>
+           </section>
+           
+    </footer>
+        <script src="scripts/bountiful.js"></script>
+    
+        <script src="scripts/weather.js"></script>
+    
+    </body>   
+       
+    </html>
