@@ -27,27 +27,83 @@
         </nav>
         <picture>
             <img src="images/bountFood.png" alt="logo" width="30%" class="center">
-        </picture></section>
+        </picture>
    
         <div class="date">
             <span>Thursday, February 2, 2023</span>
         </div>
     </header>
+    <main>
+        <article class="card thin">
+            <div class="discovery">
+                <h3>Menu</h3>
+            </div>
+        </article>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div id="fruitgrid" class="grid directory"></div>
+
+        <form method="get" action="thankyou.html">
+            <article class="h2">
+             <h2>Contact Info</h2>
+            </article>
+            <fieldset>
+                <label class="top"> First Name*
+                    <input type="text" id="name" name="name" required>
+                </label>
+               
+                <label class="top">Phone number*
+                    <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
+                </label>
+                <label class="top">Email*
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" size="30" required>
+                </label>
+                <label class="top">Comments<br>
+                    <textarea rows="6" cols="45" name="comment"></textarea>                                            </label>
+            </fieldset>
+            <br><input type="submit" value="Submit" class="submitBtn">
+        </form>
 </main>
-    <footer>
-        <section>
-            <ul class="socials">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </ul>
-           </section>
-           
-    </footer>
+<footer>
+    <section>
+        <ul class="socials">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </ul>
+       
+    </section>
+  
+    <div class="contacts">
+        <img src="images/bountFood.png" alt="logo" width="60%" class="center">
+            
+        <h3><a href="events.html">FRESH</a></h3>
+        <h3><a href="directory.html">RESOURCE</a></h3> 
+        <h3><a href="chats.html">ABOUT</a></h3>
+    </div>
+                    
+      <div>          
+    <p>info@bountifulFoods.org <br><br><br><br> +(928) 205-2938 <br></p>
+    <p>2808 Roosevelt St <br><br><br><br>Carlsbad, CA 92008</p><br><br>
+    <div class="map_link">
+    <a href="https://www.google.com/maps/place/665+E+220+N,+American+Fork,+UT+84003/@40.3813916,-111.7825115,17z/data=!4m5!3m4!1s0x874d8143ec346ded:0x582c64b36f41334c!8m2!3d40.3813875!4d-111.7803228 ">Link to map</a>    
+</div> 
+</div>
+    
+    <div class="footer_end">
+        <p id="copyright">© year | Kendra Roberts | Utah</p>
+        <p id="last_updated">Last Updated: date</p>
+    </div>
+
+
+       
+</footer>
         <script src="scripts/bountiful.js"></script>
     
         <script src="scripts/weather.js"></script>
-    
+        <script src="scripts/fresh.js"></script>
 </body>   
        
     </html>
