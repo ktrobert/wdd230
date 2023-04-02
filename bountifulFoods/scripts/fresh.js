@@ -1,64 +1,94 @@
-const url = "https://raw.githubusercontent.com/ktrobert/wdd230/main/bountifulFoods/fresh.json";
-//the following code is for grid and list, not sure if I need to put before or after url.
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("#fruitgrid");
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+const url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
-gridbutton.addEventListener("click", () => {
-    // example using arrow function
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
+const fruit1 = document.getElementById("fruit1");
+const fruit2 = document.getElementById("fruit2");
+const fruit3 = document.getElementById("fruit3");
+let fruitData;
 
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
-}
-//end of grid and list button
-async function getDirectoryData(url) {
+async function getFruitData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data)
-        //console.table(data.prophets);
-    displayDirectory(data.fruit);
+    //console.log(data)
+    fruitData = data;
+    createFruits(data,fruit1);
+    createFruits(data,fruit2);
+    createFruits(data,fruit3);
+    
 }
 
-getDirectoryData(url);
-
-const displayDirectory = (fruits) => {
-    const cards = display; //document.querySelector('.fruit'); // select the output container element
-    fruit.forEach((fruit) => {
-        // Create elements to add to the div.cards element
-        let portrait = document.createElement('img');
-        let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let h3 = document.createElement('h4')
-        let p = document.createElement('p');
-        let a = document.createElement('a');
-
-
-        h2.textContent = `${fruit.name}`;
-        h3.textContent = `${fruit.id}`;
-        p.textContent = `${fruit.family}`;
-        a.textContent = `${fruit.nutritions}`;
-        a.setAttribute('href', `${fruit.url}`)
-            // Build the image portrait by setting all the relevant attribute
-        portrait.setAttribute('src', fruit.imageurl);
-        portrait.setAttribute('alt', `${fruit.name}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '200');
-        portrait.setAttribute('height', '200');
-
-        // Append the section(card) with the created elements
-        card.appendChild(portrait);
-        card.appendChild(h2);
-        card.appendChild(h3);
-        card.appendChild(p);
-        card.appendChild(a);
-
-        cards.appendChild(card);
-    })
+function createFruits(data, element){
+    for(let i = 0; i < data.length; i++){
+        let fruitName = data[i].name;
+        let option = document.createElement("option");
+        option.setAttribute("value", i);
+        option.innerHTML = fruitName;
+        element.appendChild(option);
+    }
 }
+
+
+function showFormOutput(output){
+    let table = document.createElement("table");
+    showRow(["Form Output"],table);
+    showRow(["Name:",output.name],table);
+    showRow(["Email:",output.email],table);
+    showRow(["Phone:",output.phone],table);
+    showRow(["Fruit1:",fruitData[output.fruit1].name],table);
+    showRow(["Fruit2:",fruitData[output.fruit2].name],table);
+    showRow(["Fruit3:",fruitData[output.fruit3].name],table);
+    showRow(["Comment:",output.comment],table);
+    let date = new Date().toDateString();
+    showRow(["Date:",date],table);
+
+    showRow(["","","Fruit Name","Carbohydrates","Proten","Fat","Sugar","Calories"],table);
+    showFruitRow(output.fruit1,table);
+    showFruitRow(output.fruit2,table);
+    showFruitRow(output.fruit3,table);
+
+
+
+    document.getElementById('formOutput').appendChild(table);
+}
+
+function showFruitRow(fruit,table){
+    let fru = fruitData[fruit];
+    showRow(["","",fru.name,
+    fru.nutritions.carbohydrates,
+    fru.nutritions.protein,
+    fru.nutritions.fat,
+    fru.nutritions.sugar,
+    fru.nutritions.calories],table);
+}
+
+
+
+function showRow(data,table){
+    let row = document.createElement('tr');
+    for(let i = 0; i < data.length; i++){
+        let item = document.createElement('td');
+        item.innerHTML = data[i];
+        row.appendChild(item);
+    }
+    table.appendChild(row);
+}
+
+getFruitData(url);
+
+
+function handleSubmit(fruit) {
+    fruit.preventDefault();
+
+    const data = new FormData(fruit.target);
+
+   const value = Object.fromEntries(data.entries());
+
+    console.log({ value });
+    showFormOutput(value);
+
+    let drinks = Number(window.localStorage.getItem("drinks"));
+    window.localStorage.setItem("drinks",drinks + 1);
+  }
+
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit', handleSubmit);

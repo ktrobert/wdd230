@@ -30,7 +30,8 @@ const dailyDeals = [
     '😴 Rest Day',
     '✨ Magic Monday: $10 Fill Your Bag',
     '🍹 2$ Tuesday',
-    '🍓 Wildberrn Thursday: BOGO',
+    '🍓 Wildberry Wednesday',
+    '☝️ Thursday: BOGO',
     '🥤 Fan Friday: Free Drinks with Member Card',
     '🎉 Super Saturday: Free Samples'
 ]
@@ -66,9 +67,14 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 */
-let slideIndex = 0;
-showSlides();
 
+
+let slideIndex = 0;
+try{
+showSlides();
+}catch (error){
+
+}
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -86,3 +92,26 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
+
+// Days since last visit code
+/*
+let today = new Date();
+let lastVisit = Number(window.localStorage.getItem("last-visit"));
+let daysSince = Math.round((Date.now() - lastVisit) / 84600000);
+console.log(daysSince);
+const lastVisitDisplay = document.querySelector("#lastVisit");
+lastVisitDisplay.textContent = daysSince;
+
+lastVisit = Date.now();
+localStorage.setItem("last-visit", lastVisit);
+
+*/
+
+// Date update//
+const copyright_element = document.querySelector("#copyright");
+const year = new Date().getFullYear();
+copyright_element.innerHTML = `© ${year} | Kendra Roberts | Utah`;
+
+
+const last_updated_element = document.querySelector("#last_updated");
+last_updated_element.innerHTML = `Last Updated: ${document.lastModified}`;

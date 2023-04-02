@@ -5,7 +5,7 @@ function toggleMenu() {
 function joinLocation() {
     location.href = "join.html";
 }
-
+// Date update//
 const copyright_element = document.querySelector("#copyright");
 const year = new Date().getFullYear();
 copyright_element.innerHTML = `© ${year} | Kendra Roberts | Utah`;

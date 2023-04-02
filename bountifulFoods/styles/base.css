@@ -12,6 +12,7 @@ body {
     background-color: #f9fafc;
     padding: 0;
     margin: 0;
+    
 }
 
 h1,
@@ -25,7 +26,15 @@ h6 {
     color: #003049;
     text-align: center;
 }
+h3 {
+  font-size: 20px;  
+}
 
+p {
+  font-size: 10px;
+  color: #20a24e;
+  font-family: "Cinzel";
+}
 h4 {
     font-family: "Marcellus";
     color: white;
@@ -42,7 +51,94 @@ header>h1,
 header>h2 {
     color: white;
 }
+.logo {
+  padding-bottom: 1em;
+}
+/*call to action*/
+.heroDiv {
+  position: relative;
+  height: 100%;
+}
 
+.heroImg {
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  
+ 
+}
+
+.heroImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroTop {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color:#fffffe; 
+  outline: 3px rgb(50, 60, 53)6 ;
+  margin-right: .5em;
+  border-radius: 20px;  
+  
+}
+
+
+.heroText {
+  font-family: "Ubuntu";
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 30px;
+  color: #fdfdfd;
+  text-shadow: 4px 4px 2px rgb(0, 0, 0);
+  position:absolute;
+  top: 2px;
+  right: 2em;
+  left: 2em;
+  
+  border-radius: 10px;
+  padding: .5em;
+  margin: .5em;
+
+}
+
+.heroBottom {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  padding: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+button {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #20a24e;
+  color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button:hover {
+  background-color: #a8f9ff;
+}
+
+button:active {
+  background-color: #18b8c4;
+}
+
+.joinBtn {
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  max-height: 100px;
+}
+
+
+/*footer*/
 footer {
     text-align: center;
     background-color: #fdfaf2;
@@ -127,13 +223,7 @@ header {
     align-items: center;
 }
 
-.m {
-    font-style: italic;
-    letter-spacing: 1pt;
-    color: #C1121F;
-    font-size: 1rem;
-    font-weight: bold;
-}
+
 
 .headings {
     display: flex;
@@ -202,22 +292,18 @@ nav {
 
     
 .socials {
-    padding-inline-start: 20px;
-    display: inline;
-}
-
-.socials li {
-    display: block;
-    width: 1em;
+    position: relative;
+    top: 10%;
+    left: 38%;
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    padding: 10px;
+    font-size: 50px;
+    width: 65px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 8px 5px;
 }
   
 .fa:hover {
@@ -255,19 +341,26 @@ body {
     margin: 0
 }
 
-.mySlides {
-    display: none
-}
-
 img {
     vertical-align: middle;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
+    width: 100%;
+    position: center;
     margin: auto;
+  }
+  .slideText {
+    font-family: "Ubuntu";
+    font-size: 50px;
+    color: #f68403;
+    text-shadow: 1px 4px 4px rgb(253, 254, 253);
+    font-weight: bolder;
+    position: absolute;
+    top: 9em;
+    right: 10em;
+    
   }
   
   /* Caption text */
@@ -322,12 +415,13 @@ img {
   }
 /*weather*/
  .card {
-    background-color: #30781a;
-    border: #4175e6;
-    border-radius: 2px;
-    margin: 2em;
+    background-color: #ffffff;
+    margin: .4em;
     padding: 1em;
-    color:white;
+    color:rgb(2, 0, 10);
+    text-align: center;
+    border:rgb(251, 123, 43) solid 15px;
+    
  }
  .card .weatherCity {
         font-family: "Poppins";
@@ -345,17 +439,21 @@ img {
  }
     
  .weather h3{
-    text-align: left;
+    text-align: center;
+    font-size: 20px;
+    line-height: 5px ;
     
  }
  .weather h4{
-    text-align: left;
+    text-align: center;
     color:#030303;
+    line-height: 5px;
  }
  .temperature span {
         font-family: "Poppins";
         color: #FDF0D5;
-        font-size: 2em;
+        font-size: 20px;
+        line-height: 5px;
  }
  /*contact*/
  body {
@@ -366,6 +464,10 @@ img {
   box-sizing: border-box;
 }
 
+.drinks {
+  color: #fb8b0a;
+  font-size: 20px;
+}
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
@@ -422,11 +524,10 @@ input[type=submit]:hover {
 footer {
   text-align: center;
   background-color: #ffffff;
-  padding: 0px 0;
   align-items: center;
   justify-content: center;
   color: #fdfaf2;
-  border: 2px solid #30781a;
+  border: 5px solid #30781a;
   outline-style: outset;
   outline-color: #30781a;
   font-family: "Marcellus";
@@ -467,9 +568,10 @@ footer p {
 }
 
 .footer img {
-  width: 88px;
+  width: 150px;
   height: auto;
-  padding-top: 10px;
+  padding-top: 3em;
+  margin-top: 20em;
  
 }
 .footer a:hover {
@@ -552,3 +654,37 @@ footer p {
 }
 
           
+#forecast{
+  margin-top: 40px;
+}
+          
+#forecast table{
+  background-color: white;
+  text-align: center;
+  margin:auto;
+}
+#forecast table tr td {
+  width:60px;
+  text-color: ;
+}
+/*about page*/
+.about img {
+  max-width: 800px;
+  width: 100%;
+}
+
+.about div {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about picture {
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+.aboutDiv {
+  position: relative;
+  height: auto;
+}

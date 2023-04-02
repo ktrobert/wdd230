@@ -5,11 +5,12 @@
     <title>Bountiful Foods</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link type="text/css" rel="stylesheet" href="styles/base.css" />
     <link type="text/css" rel="stylesheet" href="styles/medium.css" />
     <link type="text/css" rel="stylesheet" href="styles/large.css" />
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -20,9 +21,11 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a> </li>
-                <li><a href="bountiful.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="https://goo.gl/maps/roUtvrzBRWFsqvgr6">📍Carlsbad, CA</a>
+                    <p>+(928) 205-2938<br>info@bountifulFoods.org</p></li>
             </ul>
         </nav>
         <picture>
@@ -34,18 +37,13 @@
         </div>
     </header>
     <main>
-        <article class="card thin">
-            <div class="discovery">
+        <article>
+            
                 <h3>Menu</h3>
             </div>
         </article>
-        <div class="menu">
-            <button id="grid">⏹️Grid</button>
-           
-        </div>
-        <div id="fruitgrid" class="grid directory"></div>
-
-        <form method="get" action="thankyou.html">
+ 
+       <form>
             <article class="h2">
              <h2>Order Form</h2>
             </article>
@@ -58,51 +56,52 @@
                     <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
                 </label>
                 <label class="top">Email*
-                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" size="30" required>
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" size="30" required><br>
                 </label>
-                <label class="top">Comments<br>
-                    <textarea rows="6" cols="45" name="comment"></textarea>                                            </label>
+                <label class="top">Fruit 1
+                    <select name="fruit1" id="fruit1"></select>
+                </label>
+                <label class="top"> Fruit 2
+                    <select name="fruit2" id="fruit2"> </select>
+                </label >
+                <label class="top"> Fruit 3
+                <select name="fruit3" id="fruit3"></select>
+            </label>
+                <label class="top">Special Instructions<br>
+                    <textarea rows="6" cols="45" name="comment"></textarea>     
+                                                       </label>
             </fieldset>
             <br><input type="submit" value="Submit" class="submitBtn">
         </form>
-</main>
-<footer>
-    <section>
-        <ul class="socials">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </ul>
+        <div id="formOutput"></div>
+        <section>
+            <ul class="socials">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </ul>
+        </section>
+    </main>
+    <footer>
        
-    </section>
   
-    <div class="contacts">
-        <img src="images/bountFood.png" alt="logo" width="60%" class="center">
-            
-        <h3><a href="events.html">FRESH</a></h3>
-        <h3><a href="directory.html">RESOURCE</a></h3> 
-        <h3><a href="chats.html">ABOUT</a></h3>
-    </div>
-                    
-      <div>          
-    <p>info@bountifulFoods.org <br><br><br><br> +(928) 205-2938 <br></p>
-    <p>2808 Roosevelt St <br><br><br><br>Carlsbad, CA 92008</p><br><br>
-    <div class="map_link">
-    <a href="https://www.google.com/maps/place/665+E+220+N,+American+Fork,+UT+84003/@40.3813916,-111.7825115,17z/data=!4m5!3m4!1s0x874d8143ec346ded:0x582c64b36f41334c!8m2!3d40.3813875!4d-111.7803228 ">Link to map</a>    
-</div> 
-</div>
-    
-    <div class="footer_end">
-        <p id="copyright">© year | Kendra Roberts | Utah</p>
-        <p id="last_updated">Last Updated: date</p>
-    </div>
+        <div class="footer">
+            <img src="images/bountFood.png" alt="logo" width="60%" class="center">
+                
+            <h3><a href="events.html">FRESH</a></h3>
+            <h3><a href="directory.html">RESOURCE</a></h3> 
+            <h3><a href="about.html">ABOUT</a></h3>
+        </div>
 
-
-       
-</footer>
+        
+        <div class="footer_end">
+            <p id="copyright">© year | Kendra Roberts | Utah</p>
+            <p id="last_updated">Last Updated: date</p>
+        </div>
+        
+    </footer>
         <script src="scripts/bountiful.js"></script>
     
-        <script src="scripts/weather.js"></script>
         <script src="scripts/fresh.js"></script>
 </body>   
        

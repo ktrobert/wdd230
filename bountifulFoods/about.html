@@ -5,11 +5,13 @@
     <title>Bountiful Foods</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link type="text/css" rel="stylesheet" href="styles/base.css" />
     <link type="text/css" rel="stylesheet" href="styles/medium.css" />
     <link type="text/css" rel="stylesheet" href="styles/large.css" />
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -20,9 +22,11 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a> </li>
-                <li><a href="bountiful.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="https://goo.gl/maps/roUtvrzBRWFsqvgr6">📍Carlsbad, CA</a>
+                    <p>+(928) 205-2938<br>info@bountifulFoods.org</p></li>
             </ul>
         </nav>
         <picture>
@@ -34,55 +38,43 @@
         </div>
     </header>
     <main>
-        <h>ABOUT US</h>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="images/Carlsbad_CA.v3.jpg" alt="carlsbad" width="90%">
-                <div class="text">Carlsbad is a small town near San Diego, California, well known for Tamarack Surf Beach and South Carlsbad State Beach. Home to The Legoland California theme park includes rides, a water park and the SEA LIFE Aquarium. The Flower Fields is a seasonal attraction, with acres of flowers. The Leo Carrillo Ranch Historic Park is home to free-roaming peacocks. A wonderful place to visit!</div>
-            </div>
-            <h2 class="heroTop"><h3>Shop with Us</h3></h2>
-
-            <button class="btn heroBottom" onclick="joinLocation()">What's your flavor</button>
-            
-            
-        </div>
-    </article>
-   
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/fruitstand.jpg" alt="fruit stand" width="70%">
-                <div class="text">Oh So Fresh</div>
-                    <p>Bountiful Foods has been providing fresh and organic poduce since 1987. We offer fresh, organic juices that you can choose on. There are plenty of options to choose from. You can also design your own mix.</p>
-            </div>
+        <h3>ABOUT US</h3>
+        <div>
+           
     
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/vegetablejuices.jpg" alt="organic juice" width="70%">
-                <div class="text">Fresh Juice</div>
-                    <p>We also provide fresh juice. Our FRESH page has our selection of fruits and vegetables that you can choose from to make your very own mix. From Oranges, strawberries, rasberries, dragonfruits, mangos, or any vegetables. You name it, we mix it! </p>
+                <div class="about">
+                    <div class="aboutDiv">
+                        <h3 class="heroTop">Our Town</h3>
+                        <picture>
+                            <img src="images/placeholder.png" data-src="images/Carlsbad_CA.v3.jpg" alt="carlsbad">
+
+                        </picture>
+                       
+                        <p>Carlsbad is a small town near San Diego, California, well known for Tamarack Surf Beach and South Carlsbad State Beach. Home to The Legoland California theme park includes rides, a water park and the SEA LIFE Aquarium. The Flower Fields is a seasonal attraction, with acres of flowers. The Leo Carrillo Ranch Historic Park is home to free-roaming peacocks. A wonderful place to visit!</p>
             </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/tractor.jpg" alt="tractor" width="70%">
-                <div class="text">Farm Fresh</div>
-                    <p>We grow our own produce. Our farm is close by so we can bring in fresh fruits and vegetables everyday.</p>
-            </div>
-    <!--
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-    -->
+            <div>
+            <picture>
+                <img src="images/placeholder.png" data-src="images/fruitstand.jpg" alt="fruit stand">
+
+            </picture>
+           
+            <p>Bountiful Foods has been providing fresh and organic poduce since 1987. We offer fresh, organic juices that you can choose on. There are plenty of options to choose from. You can also design your own mix.</p>
         </div>
-        <br>
-    
-        <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span>
-            <span class="dot"></span> 
-            <span class="dot"></span> 
+        
+        <div>
+            <picture>
+                <img src="images/placeholder.png" data-src="images/vegetablejuices.jpg" alt="organic juice">
+            </picture>
+            <p>We also provide fresh juice. Our FRESH page has our selection of fruits and vegetables that you can choose from to make your very own mix. From Oranges, strawberries, rasberries, dragonfruits, mangos, or any vegetables. You name it, we mix it! </p>
         </div>
-       
+        <div>
+            <picture>
+                <img src="images/placeholder.png" data-src="images/tractor.jpg" alt="tractor">
+            </picture>
+            <p>We grow our own produce. Our farm is close by so we can bring in fresh fruits and vegetables everyday.<p>
+        </div>
+    </div>
+</article>
        
         <div class="container">
             <div style="text-align:center">
@@ -113,44 +105,35 @@
                 </form>
               </div>
               </div>
-    </main>
-    <footer>
-        <section>
-            <ul class="socials">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </ul>
+              <section>
+                <ul class="socials">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </ul>
+            </section>
+        </main>
+        <footer>
            
-        </section>
       
-        <div class="contacts">
-            <img src="images/bountFood.png" alt="logo" width="60%" class="center">
-                
-            <h3><a href="events.html">FRESH</a></h3>
-            <h3><a href="directory.html">RESOURCE</a></h3> 
-            <h3><a href="chats.html">ABOUT</a></h3>
-        </div>
-                        
-          <div>          
-        <p>info@bountifulFoods.org <br><br><br><br> +(928) 205-2938 <br></p>
-        <p>2808 Roosevelt St <br><br><br><br>Carlsbad, CA 92008</p><br><br>
-        <div class="map_link">
-        <a href="https://www.google.com/maps/place/665+E+220+N,+American+Fork,+UT+84003/@40.3813916,-111.7825115,17z/data=!4m5!3m4!1s0x874d8143ec346ded:0x582c64b36f41334c!8m2!3d40.3813875!4d-111.7803228 ">Link to map</a>    
-    </div> 
-</div>
-        
-        <div class="footer_end">
-            <p id="copyright">© year | Kendra Roberts | Utah</p>
-            <p id="last_updated">Last Updated: date</p>
-        </div>
-   
+            <div class="footer">
+                <img src="images/bountFood.png" alt="logo" width="60%" class="center">
+                    
+                <h3><a href="events.html">FRESH</a></h3>
+                <h3><a href="directory.html">RESOURCE</a></h3> 
+                <h3><a href="about.html">ABOUT</a></h3>
+            </div>
     
-           
-    </footer>
+            
+            <div class="footer_end">
+                <p id="copyright">© year | Kendra Roberts | Utah</p>
+                <p id="last_updated">Last Updated: date</p>
+            </div>
+            
+        </footer>
+       
         <script src="scripts/bountiful.js"></script>
-    
-        <script src="scripts/weather.js"></script>
+        <script src="scripts/about.js"></script>
     
     </body>   
        
