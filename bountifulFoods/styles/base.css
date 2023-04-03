@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Crushed&family=Spicy+Rice&family=Sail&family=Rammetto+One&family=Luckiest+Guy&family=Bowlby+One&family=Cinzel:wght@400;500;600;900&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Sigmar+One&family=Staatliches&display=Ubuntu&family=Water+Brush&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Cinzel&family=Crushed&family=Felipa&family=Luckiest+Guy&family=Marcellus&family=Poppins:wght@500&family=Rammetto+One&family=Sail&family=Spicy+Rice&family=Staatliches&display=swap');
  
 :root html {
     background-color: #f7f8f9;
@@ -27,7 +27,11 @@ h6 {
     color: #003049;
     text-align: center;
 }
-
+h1 {
+  font-family: "Marcellus";
+  text-transform: capitalize;
+  font-size: 20px;
+}
 h2 {
   font-family: "Poppins";
   font-size: 20px;
@@ -48,11 +52,15 @@ h5 {
  
 }
 h4 {
-    font-family: "Marcellus";
-    color: white;
-    padding: .8em;
-    padding-bottom: 0%;
-    padding-top: 0%;
+    font-family: "crushed";
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(254, 112, 46);
+    line-height: 2px;
+    letter-spacing: 2px;
+    position: relative;
+    top: .5em;
+    right: 10em;
 }
 
 .form {
@@ -195,7 +203,7 @@ F .footer_end {
 
 p {
     font-family: "Poppins";
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: 400;
     color: #070808;
     padding: 0em;
@@ -509,7 +517,7 @@ img {
     
  .weather h3{
     text-align: center;
-    font-size: 20px;
+  
     line-height: 5px ;
     
  }
