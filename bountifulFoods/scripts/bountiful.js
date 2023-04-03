@@ -3,7 +3,7 @@ function toggleMenu() {
 }
 
 function joinLocation() {
-    location.href = "join.html";
+    location.href = "fresh.html";
 }
 /*
 const copyright_element = document.querySelector("#copyright");

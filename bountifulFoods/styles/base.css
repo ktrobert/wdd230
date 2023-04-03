@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Cinzel:wght@400;500;600;900&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Sigmar+One&family=Ubuntu&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Crushed&family=Spicy+Rice&family=Sail&family=Rammetto+One&family=Luckiest+Guy&family=Bowlby+One&family=Cinzel:wght@400;500;600;900&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Sigmar+One&family=Staatliches&display=Ubuntu&family=Water+Brush&display=swap");
  :root html {
     background-color: #f7f8f9;
 }
@@ -27,13 +27,17 @@ h6 {
     text-align: center;
 }
 h3 {
-  font-size: 20px;  
+  font-size: 40px;  
 }
 
-p {
-  font-size: 10px;
-  color: #20a24e;
-  font-family: "Cinzel";
+h5 {
+  font-family: "Staatliches";
+  font-size: 45px;
+  color: #1d992d;
+  font-weight: bold;
+  margin: 30px;
+  letter-spacing: 2px;
+ 
 }
 h4 {
     font-family: "Marcellus";
@@ -87,20 +91,22 @@ header>h2 {
 
 
 .heroText {
-  font-family: "Ubuntu";
-  font-size: 30px;
+  font-family: "Spicy Rice";
+  font-size: 35px;
+  word-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: bolder;
-  line-height: 30px;
-  color: #fdfdfd;
-  text-shadow: 4px 4px 2px rgb(0, 0, 0);
-  position:absolute;
-  top: 2px;
-  right: 2em;
-  left: 2em;
-  
+  color: #f7b308;
+  text-shadow:2px 2px 1px rgb(67, 66, 65);
+  background-color: rgba(72, 69, 69, 0.5); 
+
+  position: absolute;
+  top: .3em;
+  left: .5em;
+  text-align: left;
   border-radius: 10px;
-  padding: .5em;
-  margin: .5em;
+  padding: .2em;
+  margin: .2em;
 
 }
 
@@ -177,6 +183,7 @@ F .footer_end {
 
 .contacts {
     display: block;
+   
 }
 
 p {
@@ -201,11 +208,14 @@ h6 {
 
 .date {
     margin: 0.2rem;
-    border: 1px solid #30781a;
-    padding: 0.2rem 0.75rem;
-    background-color: #30781a;
+    padding: .3rem 0.75rem;
+    background-color: #f7770e;
     flex-basis: 100%;
     text-align: center;
+    font-family: "Bowlby one";
+    font-size: 27px;
+    letter-spacing: 3px;
+
 }
 
 header {
@@ -261,13 +271,32 @@ nav {
     margin: 0 auto;
     list-style: none;
     text-align: center;
-    padding: 0;
+    line-height: 5px;
+    
  
    
 }
+.navigation h3 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bolder;
+  color: #30781a;
+  font-family: "poppins";
 
+  
+}
+.navigation p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bolder;
+  color: #30781a;
+  font-family: "poppins";
+
+
+}
 .navigation li {
     display: none;
+
     
    
 }
@@ -279,14 +308,18 @@ nav {
 
 .navigation a {
     display: block;
-    color: #0f0d29;
+    color: #00852a;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
+    font-family: "Poppins";
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .navigation a:hover {
-    color: #4175e6;
+    color: #f18035;
    
 }
 
@@ -351,18 +384,48 @@ img {
     position: center;
     margin: auto;
   }
-  .slideText {
-    font-family: "Ubuntu";
-    font-size: 50px;
-    color: #f68403;
-    text-shadow: 1px 4px 4px rgb(253, 254, 253);
+  .slideText1 {
+    font-family: "Spicy Rice";
+    font-size: 70px;
     font-weight: bolder;
+    color: #38b303;
+    text-shadow: 5px 5px 1px  #060505;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    padding: .2em;
     position: absolute;
-    top: 9em;
-    right: 10em;
+    top: 4.5em;
+    right: 5.5em;
     
   }
-  
+
+  .slideText2 {
+    font-family: "Spicy Rice";
+    font-size: 70px;
+    font-weight: bolder;
+    color: #2d8d04;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    padding: .2em;
+    position: absolute;
+    top: 4.5em;
+    right: 3.5em;
+    
+  }
+  .slideText3 {
+    font-family: "Spicy Rice";
+    font-size: 70px;
+    font-weight: bolder;
+    color: #f7770e;
+    text-shadow: 5px 5px 1px  #060505;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    padding: .2em;
+    position: absolute;
+    top: 9em;
+    right: 6.5em;
+    
+  }
   /* Caption text */
   .text {
     color: #040404;
@@ -420,7 +483,7 @@ img {
     padding: 1em;
     color:rgb(2, 0, 10);
     text-align: center;
-    border:rgb(251, 123, 43) solid 15px;
+    border:rgb(48, 170, 4) solid 10px;
     
  }
  .card .weatherCity {
@@ -587,6 +650,38 @@ footer p {
 }
 
 /*fresh grid*/
+
+.fruitCard {
+  background-color: #ffffff;
+  margin: .4em;
+  color:rgb(2, 0, 10);
+  text-align: center;
+  border:rgb(48, 170, 4) solid 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+.column {
+  float: left;
+  width: 24%;
+  height: 200px;
+  padding-top: 2px;
+  padding-bottom: 15px;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .directory section h3 {
   font-size: 1.5rem;
  
