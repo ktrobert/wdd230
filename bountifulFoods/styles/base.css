@@ -56,6 +56,7 @@ h4 {
     font-size: 40px;
     font-weight: bolder;
     color: rgb(254, 112, 46);
+    text-shadow: 2px 2px 2px #030303;
     line-height: 2px;
     letter-spacing: 2px;
     position: relative;
@@ -225,6 +226,7 @@ h6 {
     margin: 0.2rem;
     padding: .3rem 0.75rem;
     background-color: #f7770e;
+    text-shadow: 2px 2px 3px #030303;
     flex-basis: 100%;
     text-align: center;
     font-family: "Bowlby one";
