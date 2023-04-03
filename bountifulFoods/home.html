@@ -6,18 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link type="text/css" rel="stylesheet" href="styles/base.css" />
     <link type="text/css" rel="stylesheet" href="styles/medium.css" />
     <link type="text/css" rel="stylesheet" href="styles/large.css" />
     <link rel="icon" href="favicon.ico">
-
 </head>
 
 <body>
-     
-    <header>
-        
+    <header>  
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a> </li>
@@ -29,33 +25,27 @@
             </ul>
         </nav>
         <picture class="logo">
-            <img src="images/bountFood.png" alt="logo" width="20%" class="center">
-        </picture></section>
-       
+            <img src="images/bountFood.png" alt="logo" width="300" class="center">
+        </picture>
         <div class="date">
             <span>Thursday, February 2, 2023</span>
         </div>
     </header>
-
     <main>
         <div class="slideshow-container">
-
             <div class="mySlides fade">
-                <img src="images/vegetables-g541f0814d_1280.jpg" width= "100%">
+                <img src="images/vegetables-g541f0814d_1280.jpg" alt="Fresh Produce">
                 <div class="slideText1">Fresh Produce</div>
             </div>
-         
             
-        </div>
-    
             <div class="mySlides fade">
-                <img src="images/nutrition-g97367bf86_1920.jpg" width= "100%">
+                <img src="images/nutrition-g97367bf86_1920.jpg" alt="Fruit Juice">
                 <div class="slideText2">Personalized Fruit Juice</div>
                 <button class="btn heroBottom" onclick="joinLocation()">Start your order</button>
             </div>
-    
+
             <div class="mySlides fade">
-                <img src="images/fruit-g377d3f132_1920.jpg" width= "100%">
+                <img src="images/fruit-g377d3f132_1920.jpg" alt="Farm Fresh">
                 <div class="slideText3">Farm Fresh</div>
             </div>
     <!--
@@ -70,10 +60,8 @@
             <span class="dot"></span>
             <span class="dot"></span> 
         </div>
-
         <article class="drinks">
-            <h5>Number of Drinks: <span id="drinks"></span></h5>
-                
+            <h5>Number of Drinks: <span id="drinks"></span></h5>  
         </article>
         <div class="cards">
             <article class="card boxHero">
@@ -82,70 +70,56 @@
                             <img src="images/wdd230-org (1).jpg" srcset="images/hero_small.png 1x, images/hero_medium.png 2x, images/hero_large.png 3x" alt="hero image">
                         -->
                     <picture class="heroImg">
-                        
                         <img src="images/smoothies.jpg" alt="hero image">
-                     </picture>
-                    
+                    </picture>
                     <h3 class="heroText transbox">What's your flavor? <br> Pick it and we will mix it. <br> Order now. <br> One hour pick-up.</h3>
-
                     <button class="btn heroBottom" onclick="joinLocation()">Start your order</button>
-
                 </div>
             </article>
-            <article class="card weather ">
-                 <h3>Weather</h3>
-                 <h3 class="weatherCity">Carlsbad, CA</h3>
+            <article class="card weather">
+                <h3>Weather</h3>
+                <h3 class="weatherCity">Carlsbad, CA</h3>
                 <h3><span id="current-temp"></span> &deg;F</h3>
-            <figure>
-                <img src="weather" alt="weather" id="weather-icon" width="150"/>
-                <figcaption class="weathercaption"></figcaption>
-            </figure>
-            <h4>Wind Speed: <span id="windSpeed">5.5</span> mph</h4>
-            <h4>Wind Chill: <span id="windChill"></span></h4>
-            <div id="forecast">
-
-            </div>
-        </article>
-       
-        <article class="card weather">
-            <h3>Life in Carlsbad</h3>
-            <img src="images/carlsbad.jpg" alt="carlsbad beach" width="100%">
-            <p>Carlsbad is a beautiful small city with sandy beaches, lagoons, great shopping and world-class sporting events. It is close to LEGOLAND® theme park with rides. The Flower Fields of Carlsbad Ranch supports 50 acres of magnificent flowers every spring. Home to many world-renowned golf equipment manufacturers, Carlsbad also has the La Costa golf courses where famouse golf players come together all over the world.</p>
-        </article> </div>
-        
+                <figure>
+                    <img src="weather" alt="weather" id="weather-icon" width="150"/>
+                    <figcaption class="weathercaption"></figcaption>
+                </figure>
+                <h4>Wind Speed: <span id="windSpeed">5.5</span> mph</h4>
+                <h4>Wind Chill: <span id="windChill"></span></h4>
+                <div id="forecast">
+                </div>
+            </article>
+            <article class="card weather">
+                <h3>Life in Carlsbad</h3>
+                <img src="images/carlsbad.jpg" alt="carlsbad beach" width="300">
+                <p>Carlsbad is a beautiful small city with sandy beaches, lagoons, great shopping and world-class sporting events. It is close to LEGOLAND® theme park with rides. The Flower Fields of Carlsbad Ranch supports 50 acres of magnificent flowers every spring. Home to many world-renowned golf equipment manufacturers, Carlsbad also has the La Costa golf courses where famouse golf players come together all over the world.</p>
+            </article> 
+        </div>    
         <section>
-            <ul class="socials">
+            <div class="socials">
+
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-instagram"></a>
-            </ul>
+            </div>
         </section>
     </main>
     <footer>
-       
-  
         <div class="footer">
-            <img src="images/bountFood.png" alt="logo" width="60%" class="center">
-           <div class="navigation">    
-            <h3><a href="events.html">Fresh</a></h3>
-            <h3><a href="directory.html">Resource</a></h3> 
-            <h3><a href="about.html">About</a></h3>
-        </div>
-    </div> 
-
-        
+            <img src="images/bountFood.png" alt="logo" width="60" class="center">
+            <div class="navigation">    
+                <h3><a href="events.html">Fresh</a></h3>
+                <h3><a href="directory.html">Resource</a></h3> 
+                <h3><a href="about.html">About</a></h3>
+            </div>
+        </div>         
         <div class="footer_end">
             <p id="copyright">© year | Kendra Roberts | Utah</p>
             <p id="last_updated">Last Updated: date</p>
         </div>
-        
     </footer>
     <script src="scripts/bountiful.js"></script>
-
     <script src="scripts/weather.js"></script>
     <script src="scripts/.js"></script>
-
-
 </body>   
-   
 </html>

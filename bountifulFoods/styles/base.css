@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Felipa&family=Crushed&family=Spicy+Rice&family=Sail&family=Rammetto+One&family=Luckiest+Guy&family=Bowlby+One&family=Cinzel:wght@400;500;600;900&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Sigmar+One&family=Staatliches&display=Ubuntu&family=Water+Brush&display=swap");
- :root html {
+ 
+:root html {
     background-color: #f7f8f9;
 }
 * {box-sizing: border-box;}
@@ -26,8 +27,15 @@ h6 {
     color: #003049;
     text-align: center;
 }
+
+h2 {
+  font-family: "Poppins";
+  font-size: 20px;
+
+}
 h3 {
-  font-size: 40px;  
+  font-size: 30px; 
+  font-family: "crushed"; 
 }
 
 h5 {
@@ -83,10 +91,9 @@ header>h2 {
   top: 10px;
   left: 10px;
   color:#fffffe; 
-  outline: 3px rgb(50, 60, 53)6 ;
+  outline: 3px rgb(50, 60, 53);
   margin-right: .5em;
   border-radius: 20px;  
-  
 }
 
 
@@ -182,7 +189,7 @@ F .footer_end {
 }
 
 .contacts {
-    display: block;
+   text-align: center;
    
 }
 
@@ -227,7 +234,7 @@ header {
     align-items: center;
     justify-content: center;
     color: #fdfaf2;
-    display: flexbox;
+    display: flex;
     font-family: "Bowlby One";
     font-size: 20px;
     align-items: center;
@@ -326,8 +333,8 @@ nav {
     
 .socials {
     position: relative;
-    top: 10%;
-    left: 38%;
+    width:100%;
+    text-align: center;
 }
 
 .fa {
@@ -381,10 +388,12 @@ img {
 /* Slideshow container */
 .slideshow-container {
     width: 100%;
-    position: center;
     margin: auto;
-  }
-  .slideText1 {
+}
+.slideshow-container img{
+  width:100%;
+}
+.slideText1 {
     font-family: "Spicy Rice";
     font-size: 70px;
     font-weight: bolder;
@@ -395,11 +404,10 @@ img {
     padding: .2em;
     position: absolute;
     top: 4.5em;
-    right: 5.5em;
-    
-  }
+    right: 5.5em;    
+}
 
-  .slideText2 {
+.slideText2 {
     font-family: "Spicy Rice";
     font-size: 70px;
     font-weight: bolder;
@@ -411,8 +419,8 @@ img {
     top: 4.5em;
     right: 3.5em;
     
-  }
-  .slideText3 {
+}
+.slideText3 {
     font-family: "Spicy Rice";
     font-size: 70px;
     font-weight: bolder;
@@ -423,9 +431,8 @@ img {
     padding: .2em;
     position: absolute;
     top: 9em;
-    right: 6.5em;
-    
-  }
+    right: 6.5em;    
+}
   /* Caption text */
   .text {
     color: #040404;
@@ -498,7 +505,6 @@ img {
  .temperature {
         display: flex;
         justify-content: left;
-        align-items: left;
  }
     
  .weather h3{
@@ -650,13 +656,23 @@ footer p {
 }
 
 /*fresh grid*/
-
+.fruits{
+  display:flex;
+  justify-content: center;
+}
 .fruitCard {
   background-color: #ffffff;
   margin: .4em;
   color:rgb(2, 0, 10);
   text-align: center;
   border:rgb(48, 170, 4) solid 5px;
+  width:100%;
+  max-width: 300px;
+  padding-bottom: 10px;
+}
+.fruitCard img{
+  width:80%;
+  padding-bottom: 10px;
 }
 
 /* Clearfix (clear floats) */
@@ -666,16 +682,6 @@ footer p {
   display: table;
  
 }
-
-.column {
-  float: left;
-  width: 24%;
-  height: 200px;
-  padding-top: 2px;
-  padding-bottom: 15px;
-
-}
-
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
@@ -760,7 +766,7 @@ footer p {
 }
 #forecast table tr td {
   width:60px;
-  text-color: ;
+  color: black;
 }
 /*about page*/
 .about img {
@@ -778,8 +784,21 @@ footer p {
   text-align: center;
   display: block;
 }
+.about{
+  padding-left: 5px;
+}
 
 .aboutDiv {
   position: relative;
   height: auto;
+}
+
+.cardAbout {
+  background-color: #ffffff;
+  margin: .4em;
+  padding: 1em;
+  color:rgb(2, 0, 10);
+  text-align: center;
+  border:rgb(48, 170, 4) solid 10px;
+  
 }
