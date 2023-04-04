@@ -5,7 +5,7 @@
     <title>Bountiful Foods</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <link type="text/css" rel="stylesheet" href="styles/base.css" />
     <link type="text/css" rel="stylesheet" href="styles/medium.css" />
     <link type="text/css" rel="stylesheet" href="styles/large.css" />
@@ -41,7 +41,7 @@
             <div class="mySlides fade">
                 <img src="images/nutrition-g97367bf86_1920.jpg" alt="Fruit Juice">
                 <div class="slideText2">Personalized Fruit Juice</div>
-                <button class="btn heroBottom" onclick="joinLocation()">Start your order</button>
+                <button class="btn heroBottom2" onclick="joinLocation()">Start your order</button>
             </div>
 
             <div class="mySlides fade">
@@ -84,8 +84,8 @@
                     <img src="weather" alt="weather" id="weather-icon" width="150"/>
                    <h1><figcaption class="weathercaption"></figcaption></h1>
                 </figure>
-                <h4>Wind Speed: <span id="windSpeed">5.5</span> mph</h4>
-                <h4>Wind Chill: <span id="windChill"></span></h4>
+                <h1>Wind Speed: <span id="windSpeed">5.5</span> mph</h1>
+                <h1>Wind Chill: <span id="windChill"></span></h1>
                 <div id="forecast">
                 </div>
             </article>
@@ -98,10 +98,21 @@
         <section>
             <div class="socials">
 
-                <a href="facebook" class="fa fa-facebook"></a>
-                <a href="twitter" class="fa fa-twitter"></a>
-                <a href="instagram" class="fa fa-instagram"></a>
+                <div class="wrapper">
+                    <a href="#" class="icon facebook">
+                      <div class="tooltip">Facebook</div>
+                      <span><i class="fab fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#" class="icon twitter">
+                      <div class="tooltip">Twitter</div>
+                      <span><i class="fab fa-twitter"></i></span>
+                    </a>
+                    <a href="#" class="icon instagram">
+                      <div class="tooltip">Instagram</div>
+                      <span><i class="fab fa-instagram"></i></span>
+                    </a>
             </div>
+        </div>
         </section>
     </main>
     <footer>

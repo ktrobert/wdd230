@@ -52,7 +52,6 @@ function displayResults(weatherData) {
 
     windSpeed.innerHTML = weatherData.wind.speed;
     windChill.innerHTML = calculateWindChill(weatherData.main.temp,weatherData.wind.speed);
-
 }
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${weatherLocation}&units=${weatherUnits}&appid=${weatherId}`;
 
@@ -124,7 +123,7 @@ function displayForecast(data){
         low.innerHTML = lows[i];
         lowrow.appendChild(low);
     }
-    let label = document.createElement('h4');
+    let label = document.createElement('h1');
     label.innerHTML= "Three day forecast"
     forecastDiv.appendChild(label);
     forecastDiv.appendChild(table);

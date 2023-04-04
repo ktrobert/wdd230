@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 40em) {
     .headings h1 {
         font-size: 3rem;
     }
@@ -62,7 +62,30 @@
     .Spotlight:nth-child(3) {
         display: block;
     }
-  
+    .slideText1 {
+        font-size: 40px;
+        top:350px;
+        left:0px; 
+         
+    }
+    
+    .slideText2 {
+        font-size: 40px;
+        top:350px;
+        left:0px; 
+    }
+    .slideText3 {
+        font-size: 40px;
+
+        top:350px;
+        left:0px;      
+    }
+    .heroImg {
+        width: 80%;
+   
+    }
+
+
 }
 
 /*-------------form----------*/

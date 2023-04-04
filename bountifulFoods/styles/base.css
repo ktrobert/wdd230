@@ -108,7 +108,7 @@ header>h2 {
 
 .heroText {
   font-family: "Spicy Rice";
-  font-size: 35px;
+  font-size: 20px;
   word-spacing: 4px;
   letter-spacing: 2px;
   font-weight: bolder;
@@ -127,9 +127,19 @@ header>h2 {
 }
 
 .heroBottom {
+  font-size: 20px;
   position: absolute;
-  bottom: 30px;
-  right: 50px;
+  bottom: 15px;
+  right: 15px;
+  padding: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+.heroBottom2 {
+  font-size: 20px;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
   padding: 2%;
   padding-right: 3%;
   padding-left: 3%;
@@ -169,10 +179,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: #fdfaf2;
-    border: 2px solid #780000;
-    outline-style: outset;
-    outline-color: #780000;
+ 
     font-family: "Marcellus";
     font-size: 18px;
 }
@@ -346,15 +353,78 @@ nav {
     width:100%;
     text-align: center;
 }
-
-.fa {
-    padding: 10px;
-    font-size: 50px;
-    width: 65px;
-    text-align: center;
-    text-decoration: none;
-    margin: 8px 5px;
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
 }
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+
   
 .fa:hover {
       opacity: 0.7;
@@ -362,7 +432,7 @@ nav {
 
 .fa-facebook {
     background: #3B5998;
-  color: white;
+    color: white;
   
 }
 .fa-twitter {
@@ -370,7 +440,7 @@ nav {
     color: white;
 }
 .fa-instagram {
-    background: #125688;
+    background: #f00687;
     color: white;
 }
    
@@ -405,43 +475,46 @@ img {
 }
 .slideText1 {
     font-family: "Spicy Rice";
-    font-size: 70px;
+    font-size: 20px;
     font-weight: bolder;
     color: #38b303;
-    text-shadow: 5px 5px 1px  #060505;
-    border-radius: 10px;
+    text-shadow: 3px 3px 1px  #060505;
     letter-spacing: 3px;
     padding: .2em;
     position: absolute;
-    top: 4.5em;
-    right: 5.5em;    
+    width: 100%;
+    text-align: center;
+    top:400px;
+    left:0px; 
+     
 }
 
 .slideText2 {
     font-family: "Spicy Rice";
-    font-size: 70px;
+    font-size: 20px;
     font-weight: bolder;
     color: #2d8d04;
-    border-radius: 10px;
     letter-spacing: 3px;
     padding: .2em;
     position: absolute;
-    top: 4.5em;
-    right: 3.5em;
-    
+    width: 100%;
+    text-align: center;
+    top:400px;
+    left:0px; 
 }
 .slideText3 {
     font-family: "Spicy Rice";
-    font-size: 70px;
+    font-size: 20px;
     font-weight: bolder;
     color: #f7770e;
-    text-shadow: 5px 5px 1px  #060505;
-    border-radius: 10px;
+    text-shadow: 3px 3px 1px  #060505;
     letter-spacing: 3px;
     padding: .2em;
     position: absolute;
-    top: 9em;
-    right: 6.5em;    
+    width: 100%;
+    text-align: center;
+    top:400px;
+    left:0px;      
 }
   /* Caption text */
   .text {
@@ -500,7 +573,7 @@ img {
     padding: 1em;
     color:rgb(2, 0, 10);
     text-align: center;
-    border:rgb(48, 170, 4) solid 10px;
+    border:#1d992d solid 10px;
     
  }
  .card .weatherCity {
@@ -606,9 +679,9 @@ footer {
   align-items: center;
   justify-content: center;
   color: #fdfaf2;
-  border: 5px solid #30781a;
+  border: 8px solid #1d992d;
   outline-style: outset;
-  outline-color: #30781a;
+  outline-color: #1d992d;
   font-family: "Marcellus";
   font-size: 1px;
   line-height: 5px;
@@ -782,6 +855,8 @@ footer p {
 .about img {
   max-width: 800px;
   width: 100%;
+  border:#00852a solid 10px;
+
 }
 
 .about div {
@@ -793,6 +868,7 @@ footer p {
   margin: auto;
   text-align: center;
   display: block;
+  border: #1d992d 2px;
 }
 .about{
   padding-left: 5px;
@@ -812,3 +888,4 @@ footer p {
   border:rgb(48, 170, 4) solid 10px;
   
 }
+
