@@ -20,10 +20,22 @@
         top:350px;
         left:0px;      
     }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 10px;
+    }
+    .boxHero {
+        grid-column: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
     
-
+.date {   
+    font-size: 27px;
+}
 .heroText {
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 2px;
 
     position: absolute;
