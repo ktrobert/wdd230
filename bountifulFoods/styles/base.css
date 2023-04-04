@@ -7,7 +7,6 @@ body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-
 body {
     background-color: #f9fafc;
     padding: 0;
@@ -360,6 +359,9 @@ nav {
   color: #333;
   text-decoration: none;
 }
+.icon img{
+  vertical-align:baseline;
+}
 .wrapper .tooltip {
   position: absolute;
   top: 0;
@@ -371,7 +373,6 @@ nav {
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .tooltip::before {
@@ -389,7 +390,6 @@ nav {
   top: -45px;
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
 }
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
@@ -398,20 +398,20 @@ nav {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
+  background-color: #a2dfff;
+  color: black;
 }
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
-  color: #ffffff;
+  background-color: #cff1ff;
+  color: black;
 }
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background-color: #e1306c;
-  color: #ffffff;
+  background-color: #ffc0d5;
+  color: black;
 }
 
 

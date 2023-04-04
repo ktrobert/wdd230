@@ -48,7 +48,7 @@ function showFormOutput(output){
     let date = new Date().toDateString();
     showRow(["Date:",date],table);
 
-    showRow(["","","Fruit Name","Carbohydrates","Proten","Fat","Sugar","Calories"],table);
+    showRow(["","","Fruit Name","Carbohydrates","Protein","Fat","Sugar","Calories"],table);
     showFruitRow(output.fruit1,table);
     showFruitRow(output.fruit2,table);
     showFruitRow(output.fruit3,table);
