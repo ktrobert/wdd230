@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Cinzel&family=Crushed&family=Felipa&family=Luckiest+Guy&family=Marcellus&family=Poppins:wght@500&family=Rammetto+One&family=Sail&family=Spicy+Rice&family=Staatliches&display=swap');
- 
 :root html {
     background-color: #f7f8f9;
 }
@@ -55,12 +54,13 @@ h4 {
     font-family: "crushed";
     font-size: 40px;
     font-weight: bolder;
-    color: rgb(254, 112, 46);
-    text-shadow: 2px 2px 2px #030303;
+    color: #CF4002;
+   
     line-height: 2px;
     letter-spacing: 2px;
     position: relative;
     top: .5em;
+    font-weight: bolder;
     right: 10em;
 }
 
@@ -219,21 +219,12 @@ p {
     margin-block-end: 0.5em;
 }
 
-h6 {
-    font-size: 40px;
-    color: #f2df50;
-    text-shadow: 2px 2px 2px #410303;
-    font-family: "Water Brush";
-    padding: 0em;
-    margin-block-start: 0.3em;
-    margin-block-end: 0.3em;
-}
 
 .date {
     margin: 0.2rem;
     padding: .3rem 0.75rem;
-    background-color: #f7770e;
-    text-shadow: 2px 2px 3px #030303;
+    background-color: #CF4002;
+ 
     flex-basis: 100%;
     text-align: center;
     font-family: "Bowlby one";
@@ -250,7 +241,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: #fdfaf2;
+    color: #ffffff;
     display: flex;
     font-family: "Bowlby One";
     font-size: 20px;
@@ -337,7 +328,6 @@ nav {
     text-align: center;
     text-decoration: none;
     font-family: "Poppins";
-    text-decoration: underline;
     font-weight: bolder;
     font-size: 18px;
 }
@@ -625,13 +615,14 @@ input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  margin-top: 6px;
+  margin-top: 7px;
+  font-weight: bolder;
   margin-bottom: 16px;
   resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #177D1C;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -639,7 +630,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #56ad5b;
 }
 
 /* Style the container/contact section */
